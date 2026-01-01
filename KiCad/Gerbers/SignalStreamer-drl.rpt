@@ -1,0 +1,31 @@
+Drill report for SignalStreamer.kicad_pcb
+Created on 2025-12-30T20:19:21-0500
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'SignalStreamer-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (116 holes)
+    T2  0.800mm  0.0315"  (23 holes)
+    T3  0.890mm  0.0350"  (2 holes)
+    T4  0.900mm  0.0354"  (10 holes)
+    T5  1.100mm  0.0433"  (6 holes)
+    T6  2.010mm  0.0791"  (3 holes)
+    T7  2.450mm  0.0965"  (1 hole)
+    T8  2.500mm  0.0984"  (4 holes)
+    T9  3.500mm  0.1378"  (4 holes)
+
+    Total plated holes count 169
+
+
+Drill file 'SignalStreamer-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  3.000mm  0.1181"  (16 holes)
+
+    Total unplated holes count 16

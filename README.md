@@ -7,6 +7,9 @@ The SignalStreamer project is 100% Open Source. All the KiCad hardware design do
 
 BOM: coming soon
 
-Be sure to visit the SignalSlinger project page.
+User Manual: coming soon
+
+A matching transmitter: <a href="https://github.com/OpenARDF/SignalSlinger">SignalSlinger</a>.
+
 
 

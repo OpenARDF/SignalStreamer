@@ -1,5 +1,5 @@
 Drill report for SignalStreamer.kicad_pcb
-Created on 2025-12-30T20:19:21-0500
+Created on 2026-01-02T21:45:58-0500
 
 Copper Layer Stackup:
     =============================================================
@@ -26,6 +26,7 @@ Drill file 'SignalStreamer-PTH.drl' contains
 Drill file 'SignalStreamer-NPTH.drl' contains
     unplated through holes:
     =============================================================
-    T1  3.000mm  0.1181"  (16 holes)
+    T1  2.500mm  0.0984"  (6 holes)
+    T2  3.000mm  0.1181"  (16 holes)
 
-    Total unplated holes count 16
+    Total unplated holes count 22

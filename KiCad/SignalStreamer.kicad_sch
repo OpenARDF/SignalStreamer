@@ -3,10 +3,10 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "bb5a72dd-4ae0-443a-a555-e26e42998b39")
-	(paper "A4")
+	(paper "USLetter")
 	(title_block
-		(title "80m Vertical Dipole Fox Antenna")
-		(date "2025-12-30")
+		(title "80m Bottom-Loaded Vertical Fox Antenna")
+		(date "2026-01-02")
 		(rev "X1.0")
 	)
 	(lib_symbols
@@ -3122,6 +3122,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 191.77 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6eda811a-f8e2-4dab-9886-ee206ee5e141")
 		)
@@ -3350,6 +3359,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 123.19 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "5adc05b6-55b1-404f-a9eb-57164dc5bdbd")
 		)
@@ -3452,6 +3470,15 @@
 			)
 		)
 		(property "Manufacturer PN" "FB-31-4852"
+			(at 113.03 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 113.03 114.3 0)
 			(effects
 				(font
@@ -3685,24 +3712,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 218.44 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 218.44 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Sim.Enable" ""
 			(at 218.44 97.79 0)
 			(effects
@@ -3923,6 +3932,15 @@
 		)
 		(property "Manufacturer PN" "1N5711"
 			(at 140.97 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 140.97 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4327,24 +4345,6 @@
 			)
 		)
 		(property "Manufacturer PN" "WP7113ID"
-			(at 241.3 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 241.3 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
 			(at 241.3 97.79 0)
 			(effects
 				(font
@@ -4820,24 +4820,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 229.87 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 229.87 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Sim.Enable" ""
 			(at 229.87 97.79 0)
 			(effects
@@ -5074,24 +5056,6 @@
 			)
 		)
 		(property "Manufacturer PN" "WP7113ID"
-			(at 205.74 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 205.74 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
 			(at 205.74 97.79 0)
 			(effects
 				(font
@@ -5606,6 +5570,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 198.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "93522d7d-b3ae-4ba5-b2c4-8abb5dd6eb6a")
 		)
@@ -5877,7 +5850,7 @@
 		)
 	)
 	(sheet
-		(at -19.05 6.35)
+		(at -25.4 5.08)
 		(size 16.51 11.43)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -5893,7 +5866,7 @@
 		)
 		(uuid "c9b73006-4888-422c-a9e5-798bf192af53")
 		(property "Sheetname" "Hardware"
-			(at -19.05 5.6384 0)
+			(at -25.4 4.3684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5901,8 +5874,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
-			(at -19.05 18.3646 0)
+		(property "Sheetfile" "hardware.kicad_sch"
+			(at -25.4 17.0946 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1086,7 +1086,7 @@
 		(lib_id "Mechanical:Housing")
 		(at 101.6 59.69 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -1174,15 +1174,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 101.6 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
@@ -1197,7 +1188,7 @@
 		(lib_id "Graphic:Logo_Open_Hardware_Small")
 		(at 173.99 62.23 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -1274,15 +1265,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 173.99 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
@@ -1297,7 +1279,7 @@
 		(lib_id "Graphic:Logo_Open_Hardware_Small")
 		(at 154.94 62.23 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -1383,15 +1365,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 154.94 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
@@ -1406,7 +1379,7 @@
 		(lib_id "Graphic:Logo_Open_Hardware_Small")
 		(at 130.81 62.23 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -1492,15 +1465,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 130.81 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
@@ -1514,7 +1478,7 @@
 		(lib_id "Graphic:Logo_Open_Hardware_Small")
 		(at 128.27 82.55 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -1596,15 +1560,6 @@
 			(effects
 				(font
 					(size 2.9972 2.9972)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 128.27 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -1722,7 +1677,7 @@
 		(lib_id "Graphic:Logo_Open_Hardware_Small")
 		(at 101.6 83.82 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -1804,15 +1759,6 @@
 			(effects
 				(font
 					(size 2.9972 2.9972)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 101.6 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 				(hide yes)
 			)

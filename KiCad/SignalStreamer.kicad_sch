@@ -3009,15 +3009,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 209.55 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "9f53451e-f131-4b76-95c9-579269ec59bd")
 		)
@@ -3114,15 +3105,6 @@
 			)
 		)
 		(property "Manufacturer PN" "WP7113ID"
-			(at 191.77 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 191.77 97.79 0)
 			(effects
 				(font
@@ -3246,15 +3228,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 123.19 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "48b6c484-0349-469a-bfce-6ab50233f528")
 		)
@@ -3359,15 +3332,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 123.19 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "4"
 			(uuid "5adc05b6-55b1-404f-a9eb-57164dc5bdbd")
 		)
@@ -3416,7 +3380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Axial_L26.7mm_D14.0mm_P35.00mm_Horizontal_Vishay_IHA-104"
+		(property "Footprint" "Inductor_THT:L_Lipstick_Tube_Variable"
 			(at 113.03 114.3 0)
 			(effects
 				(font
@@ -3470,15 +3434,6 @@
 			)
 		)
 		(property "Manufacturer PN" "FB-31-4852"
-			(at 113.03 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 113.03 114.3 0)
 			(effects
 				(font
@@ -3602,15 +3557,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 113.03 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "bae225d4-ee3a-48c4-b021-b6bd5db0c2bd")
 		)
@@ -3704,15 +3650,6 @@
 			)
 		)
 		(property "Manufacturer PN" "WP7113ID"
-			(at 218.44 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 218.44 97.79 0)
 			(effects
 				(font
@@ -3826,15 +3763,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 154.94 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "2d257317-de3c-43be-9b17-d85de14b6cbf")
 		)
@@ -3932,15 +3860,6 @@
 		)
 		(property "Manufacturer PN" "1N5711"
 			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 140.97 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4061,15 +3980,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 163.83 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "17e2f566-3b35-4006-b84f-823bcc9dbf23")
 		)
@@ -4166,15 +4076,6 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
-			(at 135.89 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 135.89 88.9 90)
 			(effects
 				(font
@@ -4353,15 +4254,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 241.3 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "781dbed2-6d5d-4499-8f40-6a9265f32931")
 		)
@@ -4458,15 +4350,6 @@
 			)
 		)
 		(property "Manufacturer PN" "CF18JT470R"
-			(at 160.02 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 160.02 88.9 90)
 			(effects
 				(font
@@ -4589,15 +4472,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 107.95 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "a8f09ae5-540d-49e0-828d-31395b104f3f")
 		)
@@ -4710,15 +4584,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 113.03 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "7bf4a019-5d76-4c09-b936-7ad623b88ffc")
 		)
@@ -4812,15 +4677,6 @@
 			)
 		)
 		(property "Manufacturer PN" "WP7113ID"
-			(at 229.87 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 229.87 97.79 0)
 			(effects
 				(font
@@ -4951,15 +4807,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 198.12 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "cb5c4ec2-6c34-4c10-8f90-6012aef3ccf8")
 		)
@@ -5056,15 +4903,6 @@
 			)
 		)
 		(property "Manufacturer PN" "WP7113ID"
-			(at 205.74 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 205.74 97.79 0)
 			(effects
 				(font
@@ -5195,15 +5033,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 236.22 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "5a1922f6-eee8-4af5-b0ff-dfc524500c90")
 		)
@@ -5318,15 +5147,6 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 148.59 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 148.59 88.9 0)
 			(effects
 				(font
@@ -5457,15 +5277,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 224.79 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "a4b03a0f-f5fe-4412-b756-9c8a80e1d62c")
 		)
@@ -5562,15 +5373,6 @@
 			)
 		)
 		(property "Manufacturer PN" "1N4148"
-			(at 198.12 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 198.12 80.01 0)
 			(effects
 				(font
@@ -5694,15 +5496,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 118.11 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "a55932bf-d42c-4a1e-8f3a-e0781e6d1f18")
 		)
@@ -5814,15 +5607,6 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 170.18 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 170.18 88.9 90)
 			(effects
 				(font

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "80m Bottom-Loaded Vertical Fox Antenna")
-		(date "2026-01-02")
-		(rev "X1.0")
+		(date "2026-01-09")
+		(rev "1.0")
 	)
 	(lib_symbols
 		(symbol "Graphic:Logo_Open_Hardware_Small"
@@ -1174,6 +1174,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
@@ -1194,7 +1203,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12f514a4-6f19-4a88-8c37-1f178f01c7a8")
-		(property "Reference" "H206"
+		(property "Reference" "H205"
 			(at 173.99 55.245 0)
 			(effects
 				(font
@@ -1265,10 +1274,19 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 173.99 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
-					(reference "H206")
+					(reference "H205")
 					(unit 1)
 				)
 			)
@@ -1285,7 +1303,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ed17b82-01d2-41b3-b9c8-62120d0b7fac")
-		(property "Reference" "H205"
+		(property "Reference" "H204"
 			(at 154.94 55.245 0)
 			(effects
 				(font
@@ -1365,10 +1383,19 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 154.94 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
-					(reference "H205")
+					(reference "H204")
 					(unit 1)
 				)
 			)
@@ -1385,7 +1412,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "492af781-d493-4926-a618-8bdb5dcc3d20")
-		(property "Reference" "H204"
+		(property "Reference" "H203"
 			(at 130.81 55.245 0)
 			(effects
 				(font
@@ -1465,10 +1492,19 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 130.81 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
-					(reference "H204")
+					(reference "H203")
 					(unit 1)
 				)
 			)
@@ -1484,7 +1520,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f7e890e-f6d2-4c24-ad31-58d66144d25e")
-		(property "Reference" "H201"
+		(property "Reference" "H202"
 			(at 128.27 75.565 0)
 			(effects
 				(font
@@ -1564,10 +1600,19 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 128.27 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
-					(reference "H201")
+					(reference "H202")
 					(unit 1)
 				)
 			)
@@ -1583,7 +1628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e50a671b-d5fd-4273-9479-50318831edce")
-		(property "Reference" "#SYM203"
+		(property "Reference" "#SYM201"
 			(at 156.21 76.835 0)
 			(effects
 				(font
@@ -1666,7 +1711,7 @@
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
-					(reference "#SYM203")
+					(reference "#SYM201")
 					(unit 1)
 				)
 			)
@@ -1683,7 +1728,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ecb99695-82c9-4660-bcf4-15f52add3f54")
-		(property "Reference" "H202"
+		(property "Reference" "H201"
 			(at 101.6 76.835 0)
 			(effects
 				(font
@@ -1763,10 +1808,19 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 101.6 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
-					(reference "H202")
+					(reference "H201")
 					(unit 1)
 				)
 			)

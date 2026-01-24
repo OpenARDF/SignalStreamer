@@ -7,9 +7,7 @@ SignalStreamer is an 80-meter-band radio-orienteering (ARDF) transmit antenna ki
 
 The SignalStreamer project is 100% Open Source. All the KiCad hardware design documents are available for download from this GitHub repository.
 
-BOM: coming soon
-
-User Manual: coming soon
+User Manual: <a href="https://docs.google.com/document/d/1ixdft7eyVAQ5lvPSUMsNJx15NzzCWhzimSsPBIRxByI/edit?usp=sharing">Assembly & User Manual</a>.
 
 A matching transmitter: <a href="https://github.com/OpenARDF/SignalSlinger">SignalSlinger</a>.
 

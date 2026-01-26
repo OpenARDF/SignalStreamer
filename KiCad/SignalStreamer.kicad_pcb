@@ -406,7 +406,7 @@
 			(pintype "passive")
 			(clearance 0.5)
 			(zone_connect 2)
-			(uuid "fce056c6-b4be-4f59-98ff-2cd025c86e24")
+			(uuid "2f0f12ae-15ca-4162-8fd1-2474c4d28162")
 		)
 		(pad "2" thru_hole circle
 			(at 12.39 12.38)
@@ -429,7 +429,7 @@
 			(pinfunction "IN+")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "5f6a59ee-9df8-48ad-9be3-1b51464e2e76")
+			(uuid "70fb38ce-fc9b-4a7d-b3a8-4ce19e1d53ae")
 		)
 		(pad "3" thru_hole circle
 			(at 4.49 8.5)
@@ -453,7 +453,7 @@
 			(pintype "passive")
 			(clearance 0.5)
 			(zone_connect 2)
-			(uuid "03f7f483-db43-4df5-b6d3-0447b79912a3")
+			(uuid "362faf01-8fbf-44ee-9b90-93b1f7e8def0")
 		)
 		(pad "4" smd rect
 			(at 17.2 -3.5)
@@ -477,7 +477,7 @@
 			(pintype "passive")
 			(clearance 0.5)
 			(zone_connect 2)
-			(uuid "da86fa4a-4011-40b8-b8f0-fa6cb7f4c25d")
+			(uuid "88766dca-7cd0-48db-866b-2c5606df1e9f")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/toroid.STEP"
@@ -485,7 +485,7 @@
 				(xyz 0 0 4)
 			)
 			(scale
-				(xyz 0.95 0.75 0.95)
+				(xyz 1.05 0.75 1.05)
 			)
 			(rotate
 				(xyz -90 -0 90)
@@ -1558,13 +1558,13 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -3)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -2540,15 +2540,15 @@
 			(uuid "9a17e255-5d71-4e0f-9962-7e0105d93a12")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/Amphenol-0031-5431-10RFX.step"
+		(model "${KICAD9_3DMODEL_DIR}/Connector_Coaxial.3dshapes/BNC_Amphenol_B6252HB-NPP3G-50_Horizontal.step"
 			(offset
-				(xyz 0 -1.4 0)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 -90)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -5000,13 +5000,13 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -3)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -5352,7 +5352,7 @@
 			(pinfunction "1")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "d88fe606-74d2-472f-992d-f66ae7e85576")
+			(uuid "177272ed-4d14-4996-9a21-c6cb84f4cff7")
 		)
 		(pad "2" smd rect
 			(at 17.95 -16.27 270)
@@ -5376,7 +5376,7 @@
 			(pintype "passive")
 			(clearance 0.5)
 			(zone_connect 2)
-			(uuid "2cecb258-2519-4790-94a3-1bd31cab6df9")
+			(uuid "87eb6ab1-5cac-4ebc-b7a4-3aca1de34548")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Inductor_THT.3dshapes/Lipstick-Tube.step"
@@ -6672,13 +6672,13 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -3)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -8279,13 +8279,13 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -3)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -8749,13 +8749,13 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -3)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)

@@ -1174,15 +1174,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 101.6 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
@@ -1270,15 +1261,6 @@
 			(effects
 				(font
 					(size 2.9972 2.9972)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 173.99 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -1383,15 +1365,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 154.94 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
@@ -1492,15 +1465,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 130.81 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "SignalStreamer"
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39/c9b73006-4888-422c-a9e5-798bf192af53"
@@ -1596,15 +1560,6 @@
 			(effects
 				(font
 					(size 2.9972 2.9972)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 128.27 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -1804,15 +1759,6 @@
 			(effects
 				(font
 					(size 2.9972 2.9972)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 101.6 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 				(hide yes)
 			)

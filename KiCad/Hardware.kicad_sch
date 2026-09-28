@@ -5,9 +5,9 @@
 	(uuid "403d20fe-9188-4599-9a19-ce00a2bc0cb6")
 	(paper "A4")
 	(title_block
-		(title "80m Bottom-Loaded Vertical Fox Antenna")
-		(date "2026-01-09")
-		(rev "1.0")
+		(title "80m Base-Loaded Vertical Fox Antenna")
+		(date "2026-09-28")
+		(rev "1.1")
 	)
 	(lib_symbols
 		(symbol "Graphic:Logo_Open_Hardware_Small"

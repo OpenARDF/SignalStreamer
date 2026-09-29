@@ -2105,7 +2105,7 @@
 		)
 	)
 	(rectangle
-		(start 81.28 58.42)
+		(start 52.07 53.34)
 		(end 252.73 154.94)
 		(stroke
 			(width 0)
@@ -2118,10 +2118,10 @@
 	)
 	(text "LED Tuning Indicator"
 		(exclude_from_sim no)
-		(at 145.288 116.332 0)
+		(at 141.224 108.712 0)
 		(effects
 			(font
-				(size 2.0066 2.0066)
+				(size 2.159 2.159)
 				(thickness 0.4013)
 				(bold yes)
 			)
@@ -2200,7 +2200,7 @@
 	)
 	(text "Circuit board"
 		(exclude_from_sim no)
-		(at 109.474 56.896 0)
+		(at 92.964 63.754 0)
 		(effects
 			(font
 				(size 2.9972 2.9972)
@@ -2257,13 +2257,13 @@
 		(uuid "0463795b-deca-40d7-af1c-5254e05631bd")
 	)
 	(junction
-		(at 236.22 63.5)
+		(at 236.22 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "189971a7-c957-428e-a699-039f1c3a2410")
 	)
 	(junction
-		(at 196.85 73.66)
+		(at 196.85 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d21ca5d-01a5-48a9-af80-2fb2a219def7")
@@ -2281,7 +2281,7 @@
 		(uuid "5c0626b0-1612-4ed0-b09f-8e53ecf11d1c")
 	)
 	(junction
-		(at 142.24 77.47)
+		(at 142.24 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d4cddd9-1d51-4c08-ab96-f46c9ba7c47d")
@@ -2311,7 +2311,7 @@
 		(uuid "744f665d-f604-4846-ab58-49012160c41d")
 	)
 	(junction
-		(at 142.24 68.58)
+		(at 142.24 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7707c127-8aef-4711-87cb-4e3c0b907637")
@@ -2323,7 +2323,7 @@
 		(uuid "797982b4-a9cd-4c74-8fc0-052fe67235e7")
 	)
 	(junction
-		(at 215.9 68.58)
+		(at 215.9 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "867d3341-d473-4389-8f8f-74c56ad7930e")
@@ -2371,7 +2371,7 @@
 		(uuid "c0bd5a8b-d000-476b-b88e-4a0ecdcd57fe")
 	)
 	(junction
-		(at 175.26 77.47)
+		(at 175.26 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2c8fbbf-7532-49f3-8f2a-d818311ae192")
@@ -2401,7 +2401,7 @@
 		(uuid "f17ccf53-2879-4b0b-8529-786fff59a99b")
 	)
 	(junction
-		(at 142.24 73.66)
+		(at 142.24 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f5f82df3-a0c1-4fa8-b0be-ca5af6dec5ab")
@@ -2424,7 +2424,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 87.63) (xy 236.22 63.5)
+			(xy 236.22 87.63) (xy 236.22 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2464,7 +2464,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 68.58) (xy 142.24 73.66)
+			(xy 142.24 66.04) (xy 142.24 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2494,7 +2494,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 77.47) (xy 181.61 77.47)
+			(xy 175.26 76.2) (xy 181.61 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2584,7 +2584,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 73.66) (xy 203.2 86.36)
+			(xy 203.2 71.12) (xy 203.2 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2624,7 +2624,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 87.63) (xy 196.85 73.66)
+			(xy 196.85 87.63) (xy 196.85 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2644,7 +2644,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 73.66) (xy 203.2 73.66)
+			(xy 196.85 71.12) (xy 203.2 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2694,7 +2694,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 63.5) (xy 243.84 63.5)
+			(xy 236.22 60.96) (xy 243.84 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2804,7 +2804,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 68.58) (xy 222.25 86.36)
+			(xy 222.25 66.04) (xy 222.25 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2864,7 +2864,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 73.66) (xy 196.85 73.66)
+			(xy 171.45 71.12) (xy 196.85 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2884,7 +2884,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 63.5) (xy 142.24 63.5)
+			(xy 180.34 60.96) (xy 142.24 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2964,7 +2964,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 68.58) (xy 215.9 68.58)
+			(xy 181.61 66.04) (xy 215.9 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2974,7 +2974,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 77.47) (xy 142.24 81.28)
+			(xy 142.24 76.2) (xy 142.24 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3024,7 +3024,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 63.5) (xy 142.24 68.58)
+			(xy 142.24 60.96) (xy 142.24 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3034,7 +3034,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 68.58) (xy 222.25 68.58)
+			(xy 215.9 66.04) (xy 222.25 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3044,7 +3044,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 77.47) (xy 175.26 87.63)
+			(xy 175.26 76.2) (xy 175.26 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3084,7 +3084,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 77.47) (xy 181.61 86.36)
+			(xy 181.61 76.2) (xy 181.61 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3164,7 +3164,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 73.66) (xy 142.24 73.66)
+			(xy 163.83 71.12) (xy 142.24 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3174,7 +3174,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 63.5) (xy 243.84 86.36)
+			(xy 243.84 60.96) (xy 243.84 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3224,6 +3224,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 71.12) (xy 142.24 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8b1fe5a-e4c8-4c41-a0ba-9fafb4165c95")
+	)
+	(wire
+		(pts
 			(xy 236.22 92.71) (xy 236.22 99.06)
 		)
 		(stroke
@@ -3234,7 +3244,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 68.58) (xy 215.9 87.63)
+			(xy 215.9 66.04) (xy 215.9 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3264,7 +3274,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 68.58) (xy 142.24 68.58)
+			(xy 173.99 66.04) (xy 142.24 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3274,7 +3284,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 77.47) (xy 142.24 77.47)
+			(xy 153.67 76.2) (xy 142.24 76.2)
 		)
 		(stroke
 			(width 0)
@@ -3304,7 +3314,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 63.5) (xy 236.22 63.5)
+			(xy 187.96 60.96) (xy 236.22 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3344,7 +3354,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 77.47) (xy 175.26 77.47)
+			(xy 161.29 76.2) (xy 175.26 76.2)
 		)
 		(stroke
 			(width 0)
@@ -3361,16 +3371,6 @@
 			(type default)
 		)
 		(uuid "fcb79eba-3495-4ab3-8ae3-0606584b2b15")
-	)
-	(wire
-		(pts
-			(xy 142.24 73.66) (xy 142.24 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcf26eee-29e8-491c-8a6c-3c1e20c4ac3c")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -3399,7 +3399,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 236.22 90.17 0)
 			(effects
 				(font
@@ -3600,7 +3600,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 157.48 77.47 90)
+		(at 157.48 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3608,7 +3608,7 @@
 		(dnp no)
 		(uuid "1e5b7d0e-29e2-4186-9829-62d312ffca1e")
 		(property "Reference" "R102"
-			(at 161.798 75.692 90)
+			(at 161.798 73.152 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3616,7 +3616,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 157.48 80.264 90)
+			(at 157.48 78.994 90)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -3624,8 +3624,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 157.734 76.454 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 157.734 75.184 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3634,7 +3634,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 157.48 77.47 0)
+			(at 157.48 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3643,7 +3643,7 @@
 			)
 		)
 		(property "Description" "RES 470 OHM 5% 1/8W AXIAL"
-			(at 157.48 77.47 0)
+			(at 157.48 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3652,7 +3652,7 @@
 			)
 		)
 		(property "Digi-Key Part No." "CF18JT470RCT-ND"
-			(at 157.48 77.47 90)
+			(at 157.48 76.2 90)
 			(effects
 				(font
 					(size 2.9972 2.9972)
@@ -3661,7 +3661,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF18JT470R/1741717"
-			(at 157.48 77.47 90)
+			(at 157.48 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3670,7 +3670,7 @@
 			)
 		)
 		(property "Manufacturer" "Stackpole Electronics Inc"
-			(at 157.48 77.47 90)
+			(at 157.48 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3679,7 +3679,7 @@
 			)
 		)
 		(property "Manufacturer PN" "CF18JT470R"
-			(at 157.48 77.47 90)
+			(at 157.48 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3729,7 +3729,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 154.94 90.17 0)
 			(effects
 				(font
@@ -3834,7 +3834,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 196.85 90.17 0)
 			(effects
 				(font
@@ -4243,7 +4243,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 167.64 73.66 90)
+		(at 167.64 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4251,7 +4251,7 @@
 		(dnp no)
 		(uuid "38b2bfd9-4c49-48d2-8326-4b7e2138dfe3")
 		(property "Reference" "R103"
-			(at 170.942 71.374 90)
+			(at 170.942 68.834 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4259,15 +4259,15 @@
 			)
 		)
 		(property "Value" "470"
-			(at 168.402 76.454 90)
+			(at 168.402 73.914 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 167.894 72.644 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 167.894 70.104 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4276,7 +4276,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 167.64 73.66 0)
+			(at 167.64 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4285,7 +4285,7 @@
 			)
 		)
 		(property "Description" "RES 470 OHM 5% 1/8W AXIAL"
-			(at 167.64 73.66 0)
+			(at 167.64 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4294,7 +4294,7 @@
 			)
 		)
 		(property "Digi-Key Part No." "CF18JT470RCT-ND"
-			(at 167.64 73.66 90)
+			(at 167.64 71.12 90)
 			(effects
 				(font
 					(size 2.9972 2.9972)
@@ -4303,7 +4303,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF18JT470R/1741717"
-			(at 167.64 73.66 90)
+			(at 167.64 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4312,7 +4312,7 @@
 			)
 		)
 		(property "Manufacturer" "Stackpole Electronics Inc"
-			(at 167.64 73.66 90)
+			(at 167.64 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4321,7 +4321,7 @@
 			)
 		)
 		(property "Manufacturer PN" "CF18JT470R"
-			(at 167.64 73.66 90)
+			(at 167.64 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4371,7 +4371,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 215.9 90.17 0)
 			(effects
 				(font
@@ -4796,7 +4796,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 116.84 90.17 0)
 			(effects
 				(font
@@ -4876,7 +4876,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 184.15 63.5 90)
+		(at 184.15 60.96 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4884,7 +4884,7 @@
 		(dnp no)
 		(uuid "5f3d6ffa-d74f-49c5-b60d-18b92dd1ce45")
 		(property "Reference" "R105"
-			(at 179.07 61.722 90)
+			(at 179.07 59.182 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4892,15 +4892,15 @@
 			)
 		)
 		(property "Value" "470"
-			(at 184.658 66.294 90)
+			(at 184.658 63.754 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 184.404 62.484 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 184.404 59.944 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4909,7 +4909,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 63.5 0)
+			(at 184.15 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4918,7 +4918,7 @@
 			)
 		)
 		(property "Description" "RES 470 OHM 5% 1/8W AXIAL"
-			(at 184.15 63.5 0)
+			(at 184.15 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4927,7 +4927,7 @@
 			)
 		)
 		(property "Digi-Key Part No." "CF18JT470RCT-ND"
-			(at 184.15 63.5 90)
+			(at 184.15 60.96 90)
 			(effects
 				(font
 					(size 2.9972 2.9972)
@@ -4936,7 +4936,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF18JT470R/1741717"
-			(at 184.15 63.5 90)
+			(at 184.15 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4945,7 +4945,7 @@
 			)
 		)
 		(property "Manufacturer" "Stackpole Electronics Inc"
-			(at 184.15 63.5 90)
+			(at 184.15 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4954,7 +4954,7 @@
 			)
 		)
 		(property "Manufacturer PN" "CF18JT470R"
-			(at 184.15 63.5 90)
+			(at 184.15 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5220,7 +5220,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 96.52 81.28 0)
 			(effects
 				(font
@@ -5325,7 +5325,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 229.87 109.22 0)
 			(effects
 				(font
@@ -5496,7 +5496,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 209.55 109.22 0)
 			(effects
 				(font
@@ -5576,7 +5576,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 177.8 68.58 90)
+		(at 177.8 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5584,7 +5584,7 @@
 		(dnp no)
 		(uuid "7a5463d3-0c90-4145-ac99-a816c7ae7ca0")
 		(property "Reference" "R104"
-			(at 172.974 66.802 90)
+			(at 172.974 64.262 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5592,15 +5592,15 @@
 			)
 		)
 		(property "Value" "470"
-			(at 177.292 71.374 90)
+			(at 177.292 68.834 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 178.054 67.564 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 178.054 65.024 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5609,7 +5609,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 68.58 0)
+			(at 177.8 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5618,7 +5618,7 @@
 			)
 		)
 		(property "Description" "RES 470 OHM 5% 1/8W AXIAL"
-			(at 177.8 68.58 0)
+			(at 177.8 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5627,7 +5627,7 @@
 			)
 		)
 		(property "Digi-Key Part No." "CF18JT470RCT-ND"
-			(at 177.8 68.58 90)
+			(at 177.8 66.04 90)
 			(effects
 				(font
 					(size 2.9972 2.9972)
@@ -5636,7 +5636,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF18JT470R/1741717"
-			(at 177.8 68.58 90)
+			(at 177.8 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5645,7 +5645,7 @@
 			)
 		)
 		(property "Manufacturer" "Stackpole Electronics Inc"
-			(at 177.8 68.58 90)
+			(at 177.8 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5654,7 +5654,7 @@
 			)
 		)
 		(property "Manufacturer PN" "CF18JT470R"
-			(at 177.8 68.58 90)
+			(at 177.8 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5807,7 +5807,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 148.844 80.264 90)
 			(effects
 				(font
@@ -6586,7 +6586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 187.96 109.22 0)
 			(effects
 				(font
@@ -6812,7 +6812,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 168.91 109.22 0)
 			(effects
 				(font
@@ -7132,7 +7132,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 175.26 90.17 0)
 			(effects
 				(font

@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "80m Base-Loaded Vertical Fox Antenna")
-		(date "2026-09-28")
+		(date "2026-10-16")
 		(rev "1.1")
 	)
 	(lib_symbols
@@ -1111,7 +1111,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "~"
+		(property "Footprint" ""
 			(at 102.87 58.42 0)
 			(effects
 				(font

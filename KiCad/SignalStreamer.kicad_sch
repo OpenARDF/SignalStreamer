@@ -6,7 +6,7 @@
 	(paper "USLetter")
 	(title_block
 		(title "80m Base-Loaded Vertical Fox Antenna")
-		(date "2026-09-28")
+		(date "2026-10-16")
 		(rev "1.1")
 	)
 	(lib_symbols
@@ -2103,9 +2103,110 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
-		(start 52.07 53.34)
+		(start 13.97 53.34)
 		(end 252.73 154.94)
 		(stroke
 			(width 0)
@@ -2188,7 +2289,7 @@
 	)
 	(text "1-3 3m (9') radials, or ground stake"
 		(exclude_from_sim no)
-		(at 56.896 165.1 0)
+		(at 73.66 164.846 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -2239,7 +2340,7 @@
 	)
 	(text "Ground Plane"
 		(exclude_from_sim no)
-		(at 53.848 162.306 0)
+		(at 61.722 160.782 0)
 		(effects
 			(font
 				(size 2.9972 2.9972)
@@ -2333,6 +2434,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87c6f6ef-89b4-4701-ba50-9ceb0ac96d17")
+	)
+	(junction
+		(at 71.12 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8deb8c77-84a1-48dc-8011-10c42f586552")
 	)
 	(junction
 		(at 181.61 99.06)
@@ -2674,6 +2781,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 128.27) (xy 71.12 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ab973c0-ab21-4b24-a259-2377b99b5221")
+	)
+	(wire
+		(pts
 			(xy 196.85 92.71) (xy 196.85 99.06)
 		)
 		(stroke
@@ -2744,7 +2861,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 124.46) (xy 71.12 140.97)
+			(xy 71.12 124.46) (xy 71.12 128.27)
 		)
 		(stroke
 			(width 0)
@@ -2931,6 +3048,16 @@
 			(type default)
 		)
 		(uuid "841e677c-5cb2-49b4-88ba-5a61c301df7f")
+	)
+	(wire
+		(pts
+			(xy 68.58 128.27) (xy 71.12 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "850045e2-a63f-43b9-9d94-40d0519f107e")
 	)
 	(wire
 		(pts
@@ -3408,7 +3535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
 			(at 236.22 90.17 0)
 			(effects
 				(font
@@ -3417,7 +3544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.47UF 100V X7S RADIAL"
+		(property "Description" "CAP CER 0.47UF 50V X7R 0805"
 			(at 236.22 90.17 0)
 			(effects
 				(font
@@ -3426,7 +3553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "445-180414-1-ND "
+		(property "Digi-Key Part No." "478-KGM21AR71H474JUCT-ND"
 			(at 236.22 90.17 90)
 			(effects
 				(font
@@ -3435,7 +3562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 236.22 90.17 90)
 			(effects
 				(font
@@ -3444,7 +3571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "FA14X7S2A474KRU06"
+		(property "Manufacturer PN" "KGM21AR71H474JU"
 			(at 236.22 90.17 90)
 			(effects
 				(font
@@ -3453,7 +3580,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
+		(property "Link" "https://www.digikey.com/en/products/detail/kyocera-avx/KGM21AR71H474JU/6797430"
 			(at 236.22 90.17 90)
 			(effects
 				(font
@@ -3502,7 +3629,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 187.96 103.505 0)
 			(effects
 				(font
@@ -3511,7 +3638,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/1n914-d.pdf"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAV16W_1N4148W.pdf"
 			(at 187.96 99.06 0)
 			(effects
 				(font
@@ -3520,7 +3647,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Through Hole DO-35"
+		(property "Description" "DIODE STANDARD 100V 300MA SOD123"
 			(at 187.96 99.06 0)
 			(effects
 				(font
@@ -3529,7 +3656,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "1N4148FS-ND "
+		(property "Digi-Key Part No." "1N4148W-FDICT-ND"
 			(at 187.96 99.06 0)
 			(effects
 				(font
@@ -3538,7 +3665,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "Diodes Incorporated"
 			(at 187.96 99.06 0)
 			(effects
 				(font
@@ -3547,7 +3674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "1N4148"
+		(property "Manufacturer PN" "1N4148W-7-F"
 			(at 187.96 99.06 0)
 			(effects
 				(font
@@ -3556,7 +3683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/onsemi/1N4148/458603"
+		(property "Link" "https://www.digikey.com/en/products/detail/diodes-incorporated/1N4148W-7-F/814371"
 			(at 187.96 99.06 0)
 			(effects
 				(font
@@ -3642,7 +3769,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 470 OHM 5% 1/8W AXIAL"
+		(property "Description" "RES 470 OHM 1% 1/8W 0805"
 			(at 157.48 76.2 0)
 			(effects
 				(font
@@ -3651,7 +3778,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "CF18JT470RCT-ND"
+		(property "Digi-Key Part No." "311-470CRCT-ND"
 			(at 157.48 76.2 90)
 			(effects
 				(font
@@ -3660,7 +3787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF18JT470R/1741717"
+		(property "Link" "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07470RL/727976"
 			(at 157.48 76.2 90)
 			(effects
 				(font
@@ -3669,7 +3796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
+		(property "Manufacturer" "YAGEO"
 			(at 157.48 76.2 90)
 			(effects
 				(font
@@ -3678,7 +3805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "CF18JT470R"
+		(property "Manufacturer PN" "RC0805FR-07470RL"
 			(at 157.48 76.2 90)
 			(effects
 				(font
@@ -3738,7 +3865,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
 			(at 154.94 90.17 0)
 			(effects
 				(font
@@ -3747,7 +3874,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.47UF 100V X7S RADIAL"
+		(property "Description" "CAP CER 0.47UF 50V X7R 0805"
 			(at 154.94 90.17 0)
 			(effects
 				(font
@@ -3756,7 +3883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "445-180414-1-ND "
+		(property "Digi-Key Part No." "478-KGM21AR71H474JUCT-ND"
 			(at 154.94 90.17 90)
 			(effects
 				(font
@@ -3765,7 +3892,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 154.94 90.17 90)
 			(effects
 				(font
@@ -3774,7 +3901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "FA14X7S2A474KRU06"
+		(property "Manufacturer PN" "KGM21AR71H474JU"
 			(at 154.94 90.17 90)
 			(effects
 				(font
@@ -3783,7 +3910,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
+		(property "Link" "https://www.digikey.com/en/products/detail/kyocera-avx/KGM21AR71H474JU/6797430"
 			(at 154.94 90.17 90)
 			(effects
 				(font
@@ -3843,7 +3970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
 			(at 196.85 90.17 0)
 			(effects
 				(font
@@ -3852,7 +3979,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.47UF 100V X7S RADIAL"
+		(property "Description" "CAP CER 0.47UF 50V X7R 0805"
 			(at 196.85 90.17 0)
 			(effects
 				(font
@@ -3861,7 +3988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "445-180414-1-ND "
+		(property "Digi-Key Part No." "478-KGM21AR71H474JUCT-ND"
 			(at 196.85 90.17 90)
 			(effects
 				(font
@@ -3870,7 +3997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 196.85 90.17 90)
 			(effects
 				(font
@@ -3879,7 +4006,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "FA14X7S2A474KRU06"
+		(property "Manufacturer PN" "KGM21AR71H474JU"
 			(at 196.85 90.17 90)
 			(effects
 				(font
@@ -3888,7 +4015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
+		(property "Link" "https://www.digikey.com/en/products/detail/kyocera-avx/KGM21AR71H474JU/6797430"
 			(at 196.85 90.17 90)
 			(effects
 				(font
@@ -4284,7 +4411,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 470 OHM 5% 1/8W AXIAL"
+		(property "Description" "RES 470 OHM 1% 1/8W 0805"
 			(at 167.64 71.12 0)
 			(effects
 				(font
@@ -4293,7 +4420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "CF18JT470RCT-ND"
+		(property "Digi-Key Part No." "311-470CRCT-ND"
 			(at 167.64 71.12 90)
 			(effects
 				(font
@@ -4302,7 +4429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF18JT470R/1741717"
+		(property "Link" "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07470RL/727976"
 			(at 167.64 71.12 90)
 			(effects
 				(font
@@ -4311,7 +4438,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
+		(property "Manufacturer" "YAGEO"
 			(at 167.64 71.12 90)
 			(effects
 				(font
@@ -4320,7 +4447,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "CF18JT470R"
+		(property "Manufacturer PN" "RC0805FR-07470RL"
 			(at 167.64 71.12 90)
 			(effects
 				(font
@@ -4380,7 +4507,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
 			(at 215.9 90.17 0)
 			(effects
 				(font
@@ -4389,7 +4516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.47UF 100V X7S RADIAL"
+		(property "Description" "CAP CER 0.47UF 50V X7R 0805"
 			(at 215.9 90.17 0)
 			(effects
 				(font
@@ -4398,7 +4525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "445-180414-1-ND "
+		(property "Digi-Key Part No." "478-KGM21AR71H474JUCT-ND"
 			(at 215.9 90.17 90)
 			(effects
 				(font
@@ -4407,7 +4534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 215.9 90.17 90)
 			(effects
 				(font
@@ -4416,7 +4543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "FA14X7S2A474KRU06"
+		(property "Manufacturer PN" "KGM21AR71H474JU"
 			(at 215.9 90.17 90)
 			(effects
 				(font
@@ -4425,7 +4552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
+		(property "Link" "https://www.digikey.com/en/products/detail/kyocera-avx/KGM21AR71H474JU/6797430"
 			(at 215.9 90.17 90)
 			(effects
 				(font
@@ -4805,7 +4932,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
 			(at 116.84 90.17 0)
 			(effects
 				(font
@@ -4814,7 +4941,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.47UF 100V X7S RADIAL"
+		(property "Description" "CAP CER 0.47UF 50V X7R 0805"
 			(at 116.84 90.17 0)
 			(effects
 				(font
@@ -4823,7 +4950,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "445-180414-1-ND "
+		(property "Digi-Key Part No." "478-KGM21AR71H474JUCT-ND"
 			(at 116.84 90.17 90)
 			(effects
 				(font
@@ -4832,7 +4959,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 116.84 90.17 90)
 			(effects
 				(font
@@ -4841,7 +4968,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "FA14X7S2A474KRU06"
+		(property "Manufacturer PN" "KGM21AR71H474JU"
 			(at 116.84 90.17 90)
 			(effects
 				(font
@@ -4850,7 +4977,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
+		(property "Link" "https://www.digikey.com/en/products/detail/kyocera-avx/KGM21AR71H474JU/6797430"
 			(at 116.84 90.17 90)
 			(effects
 				(font
@@ -4917,7 +5044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 470 OHM 5% 1/8W AXIAL"
+		(property "Description" "RES 470 OHM 1% 1/8W 0805"
 			(at 184.15 60.96 0)
 			(effects
 				(font
@@ -4926,7 +5053,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "CF18JT470RCT-ND"
+		(property "Digi-Key Part No." "311-470CRCT-ND"
 			(at 184.15 60.96 90)
 			(effects
 				(font
@@ -4935,7 +5062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF18JT470R/1741717"
+		(property "Link" "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07470RL/727976"
 			(at 184.15 60.96 90)
 			(effects
 				(font
@@ -4944,7 +5071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
+		(property "Manufacturer" "YAGEO"
 			(at 184.15 60.96 90)
 			(effects
 				(font
@@ -4953,7 +5080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "CF18JT470R"
+		(property "Manufacturer PN" "RC0805FR-07470RL"
 			(at 184.15 60.96 90)
 			(effects
 				(font
@@ -5003,7 +5130,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 102.87 90.17 0)
 			(effects
 				(font
@@ -5012,7 +5139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/a8/9d/10/57/ac/a3/4f/81/CD00000759.pdf/files/CD00000759.pdf/jcr:content/translations/en.CD00000759.pdf"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/1N5711W.pdf"
 			(at 102.87 90.17 0)
 			(effects
 				(font
@@ -5021,7 +5148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RF DIODE SCHOTTKY 70V 430MW DO35"
+		(property "Description" "DIODE SCHOTTKY 70V 333MW SOD123"
 			(at 102.87 90.17 0)
 			(effects
 				(font
@@ -5030,7 +5157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "497-2499-1-ND"
+		(property "Digi-Key Part No." "1N5711W-FDICT-ND"
 			(at 102.87 90.17 0)
 			(effects
 				(font
@@ -5039,7 +5166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stmicroelectronics/1N5711/603524"
+		(property "Link" "https://www.digikey.com/en/products/detail/diodes-incorporated/1N5711W-7-F/808531"
 			(at 102.87 90.17 0)
 			(effects
 				(font
@@ -5048,7 +5175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "STMicroelectronics"
+		(property "Manufacturer" "Diodes Incorporated"
 			(at 102.87 90.17 0)
 			(effects
 				(font
@@ -5057,7 +5184,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "1N5711"
+		(property "Manufacturer PN" "1N5711W-7-F"
 			(at 102.87 90.17 0)
 			(effects
 				(font
@@ -5229,7 +5356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
 			(at 96.52 81.28 0)
 			(effects
 				(font
@@ -5238,7 +5365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.47UF 100V X7S RADIAL"
+		(property "Description" "CAP CER 0.47UF 50V X7R 0805"
 			(at 96.52 81.28 0)
 			(effects
 				(font
@@ -5247,7 +5374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "445-180414-1-ND "
+		(property "Digi-Key Part No." "478-KGM21AR71H474JUCT-ND"
 			(at 96.52 81.28 90)
 			(effects
 				(font
@@ -5256,7 +5383,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 96.52 81.28 90)
 			(effects
 				(font
@@ -5265,7 +5392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "FA14X7S2A474KRU06"
+		(property "Manufacturer PN" "KGM21AR71H474JU"
 			(at 96.52 81.28 90)
 			(effects
 				(font
@@ -5274,7 +5401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
+		(property "Link" "https://www.digikey.com/en/products/detail/kyocera-avx/KGM21AR71H474JU/6797430"
 			(at 96.52 81.28 90)
 			(effects
 				(font
@@ -5293,6 +5420,72 @@
 			(project ""
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39"
 					(reference "C101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 68.58 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b257a63-3a21-4ca4-9db9-c8400916d8c1")
+		(property "Reference" "#FLG0101"
+			(at 68.58 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 68.58 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 68.58 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "904617f4-5117-4a83-a180-be2d1c9ba3dc")
+		)
+		(instances
+			(project ""
+				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39"
+					(reference "#FLG0101")
 					(unit 1)
 				)
 			)
@@ -5334,7 +5527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
 			(at 229.87 109.22 0)
 			(effects
 				(font
@@ -5343,7 +5536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.47UF 100V X7S RADIAL"
+		(property "Description" "CAP CER 0.47UF 50V X7R 0805"
 			(at 229.87 109.22 0)
 			(effects
 				(font
@@ -5352,7 +5545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "445-180414-1-ND "
+		(property "Digi-Key Part No." "478-KGM21AR71H474JUCT-ND"
 			(at 229.87 109.22 90)
 			(effects
 				(font
@@ -5361,7 +5554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 229.87 109.22 90)
 			(effects
 				(font
@@ -5370,7 +5563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "FA14X7S2A474KRU06"
+		(property "Manufacturer PN" "KGM21AR71H474JU"
 			(at 229.87 109.22 90)
 			(effects
 				(font
@@ -5379,7 +5572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
+		(property "Link" "https://www.digikey.com/en/products/detail/kyocera-avx/KGM21AR71H474JU/6797430"
 			(at 229.87 109.22 90)
 			(effects
 				(font
@@ -5505,7 +5698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
 			(at 209.55 109.22 0)
 			(effects
 				(font
@@ -5514,7 +5707,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.47UF 100V X7S RADIAL"
+		(property "Description" "CAP CER 0.47UF 50V X7R 0805"
 			(at 209.55 109.22 0)
 			(effects
 				(font
@@ -5523,7 +5716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "445-180414-1-ND "
+		(property "Digi-Key Part No." "478-KGM21AR71H474JUCT-ND"
 			(at 209.55 109.22 90)
 			(effects
 				(font
@@ -5532,7 +5725,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 209.55 109.22 90)
 			(effects
 				(font
@@ -5541,7 +5734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "FA14X7S2A474KRU06"
+		(property "Manufacturer PN" "KGM21AR71H474JU"
 			(at 209.55 109.22 90)
 			(effects
 				(font
@@ -5550,7 +5743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
+		(property "Link" "https://www.digikey.com/en/products/detail/kyocera-avx/KGM21AR71H474JU/6797430"
 			(at 209.55 109.22 90)
 			(effects
 				(font
@@ -5617,7 +5810,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 470 OHM 5% 1/8W AXIAL"
+		(property "Description" "RES 470 OHM 1% 1/8W 0805"
 			(at 177.8 66.04 0)
 			(effects
 				(font
@@ -5626,7 +5819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "CF18JT470RCT-ND"
+		(property "Digi-Key Part No." "311-470CRCT-ND"
 			(at 177.8 66.04 90)
 			(effects
 				(font
@@ -5635,7 +5828,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF18JT470R/1741717"
+		(property "Link" "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07470RL/727976"
 			(at 177.8 66.04 90)
 			(effects
 				(font
@@ -5644,7 +5837,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
+		(property "Manufacturer" "YAGEO"
 			(at 177.8 66.04 90)
 			(effects
 				(font
@@ -5653,7 +5846,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "CF18JT470R"
+		(property "Manufacturer PN" "RC0805FR-07470RL"
 			(at 177.8 66.04 90)
 			(effects
 				(font
@@ -5825,7 +6018,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 470 OHM 5% 1/8W AXIAL"
+		(property "Description" "RES 470 OHM 1% 1/8W 0805"
 			(at 148.59 81.28 0)
 			(effects
 				(font
@@ -5834,7 +6027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "CF18JT470RCT-ND"
+		(property "Digi-Key Part No." "311-470CRCT-ND"
 			(at 148.59 81.28 90)
 			(effects
 				(font
@@ -5843,7 +6036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF18JT470R/1741717"
+		(property "Link" "https://www.digikey.com/en/products/detail/yageo/RC0805FR-07470RL/727976"
 			(at 148.59 81.28 90)
 			(effects
 				(font
@@ -5852,7 +6045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
+		(property "Manufacturer" "YAGEO"
 			(at 148.59 81.28 90)
 			(effects
 				(font
@@ -5861,7 +6054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "CF18JT470R"
+		(property "Manufacturer PN" "RC0805FR-07470RL"
 			(at 148.59 81.28 90)
 			(effects
 				(font
@@ -6341,7 +6534,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 229.87 103.505 0)
 			(effects
 				(font
@@ -6350,7 +6543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/1n914-d.pdf"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAV16W_1N4148W.pdf"
 			(at 229.87 99.06 0)
 			(effects
 				(font
@@ -6359,7 +6552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Through Hole DO-35"
+		(property "Description" "DIODE STANDARD 100V 300MA SOD123"
 			(at 229.87 99.06 0)
 			(effects
 				(font
@@ -6368,7 +6561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "1N4148FS-ND "
+		(property "Digi-Key Part No." "1N4148W-FDICT-ND"
 			(at 229.87 99.06 0)
 			(effects
 				(font
@@ -6377,7 +6570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "Diodes Incorporated"
 			(at 229.87 99.06 0)
 			(effects
 				(font
@@ -6386,7 +6579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "1N4148"
+		(property "Manufacturer PN" "1N4148W-7-F"
 			(at 229.87 99.06 0)
 			(effects
 				(font
@@ -6395,7 +6588,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/onsemi/1N4148/458603"
+		(property "Link" "https://www.digikey.com/en/products/detail/diodes-incorporated/1N4148W-7-F/814371"
 			(at 229.87 99.06 0)
 			(effects
 				(font
@@ -6463,7 +6656,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 110.49 81.28 0)
 			(effects
 				(font
@@ -6472,7 +6665,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/a8/9d/10/57/ac/a3/4f/81/CD00000759.pdf/files/CD00000759.pdf/jcr:content/translations/en.CD00000759.pdf"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/1N5711W.pdf"
 			(at 110.49 81.28 0)
 			(effects
 				(font
@@ -6481,7 +6674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RF DIODE SCHOTTKY 70V 430MW DO35"
+		(property "Description" "DIODE SCHOTTKY 70V 333MW SOD123"
 			(at 110.49 81.28 0)
 			(effects
 				(font
@@ -6490,7 +6683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "497-2499-1-ND"
+		(property "Digi-Key Part No." "1N5711W-FDICT-ND"
 			(at 110.49 81.28 0)
 			(effects
 				(font
@@ -6499,7 +6692,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "STMicroelectronics"
+		(property "Manufacturer" "Diodes Incorporated"
 			(at 110.49 81.28 0)
 			(effects
 				(font
@@ -6508,7 +6701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "1N5711"
+		(property "Manufacturer PN" "1N5711W-7-F"
 			(at 110.49 81.28 0)
 			(effects
 				(font
@@ -6517,7 +6710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stmicroelectronics/1N5711/603524"
+		(property "Link" "https://www.digikey.com/en/products/detail/diodes-incorporated/1N5711W-7-F/808531"
 			(at 110.49 81.28 0)
 			(effects
 				(font
@@ -6595,7 +6788,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
 			(at 187.96 109.22 0)
 			(effects
 				(font
@@ -6604,7 +6797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.47UF 100V X7S RADIAL"
+		(property "Description" "CAP CER 0.47UF 50V X7R 0805"
 			(at 187.96 109.22 0)
 			(effects
 				(font
@@ -6613,7 +6806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "445-180414-1-ND "
+		(property "Digi-Key Part No." "478-KGM21AR71H474JUCT-ND"
 			(at 187.96 109.22 90)
 			(effects
 				(font
@@ -6622,7 +6815,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 187.96 109.22 90)
 			(effects
 				(font
@@ -6631,7 +6824,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "FA14X7S2A474KRU06"
+		(property "Manufacturer PN" "KGM21AR71H474JU"
 			(at 187.96 109.22 90)
 			(effects
 				(font
@@ -6640,7 +6833,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
+		(property "Link" "https://www.digikey.com/en/products/detail/kyocera-avx/KGM21AR71H474JU/6797430"
 			(at 187.96 109.22 90)
 			(effects
 				(font
@@ -6689,7 +6882,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 209.55 103.505 0)
 			(effects
 				(font
@@ -6698,7 +6891,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/1n914-d.pdf"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAV16W_1N4148W.pdf"
 			(at 209.55 99.06 0)
 			(effects
 				(font
@@ -6707,7 +6900,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Through Hole DO-35"
+		(property "Description" "DIODE STANDARD 100V 300MA SOD123"
 			(at 209.55 99.06 0)
 			(effects
 				(font
@@ -6716,7 +6909,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "1N4148FS-ND "
+		(property "Digi-Key Part No." "1N4148W-FDICT-ND"
 			(at 209.55 99.06 0)
 			(effects
 				(font
@@ -6725,7 +6918,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "Diodes Incorporated"
 			(at 209.55 99.06 0)
 			(effects
 				(font
@@ -6734,7 +6927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "1N4148"
+		(property "Manufacturer PN" "1N4148W-7-F"
 			(at 209.55 99.06 0)
 			(effects
 				(font
@@ -6743,7 +6936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/onsemi/1N4148/458603"
+		(property "Link" "https://www.digikey.com/en/products/detail/diodes-incorporated/1N4148W-7-F/814371"
 			(at 209.55 99.06 0)
 			(effects
 				(font
@@ -6821,7 +7014,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
 			(at 168.91 109.22 0)
 			(effects
 				(font
@@ -6830,7 +7023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.47UF 100V X7S RADIAL"
+		(property "Description" "CAP CER 0.47UF 50V X7R 0805"
 			(at 168.91 109.22 0)
 			(effects
 				(font
@@ -6839,7 +7032,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "445-180414-1-ND "
+		(property "Digi-Key Part No." "478-KGM21AR71H474JUCT-ND"
 			(at 168.91 109.22 90)
 			(effects
 				(font
@@ -6848,7 +7041,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 168.91 109.22 90)
 			(effects
 				(font
@@ -6857,7 +7050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "FA14X7S2A474KRU06"
+		(property "Manufacturer PN" "KGM21AR71H474JU"
 			(at 168.91 109.22 90)
 			(effects
 				(font
@@ -6866,7 +7059,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
+		(property "Link" "https://www.digikey.com/en/products/detail/kyocera-avx/KGM21AR71H474JU/6797430"
 			(at 168.91 109.22 90)
 			(effects
 				(font
@@ -6915,7 +7108,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 168.91 103.505 0)
 			(effects
 				(font
@@ -6924,7 +7117,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/1n914-d.pdf"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAV16W_1N4148W.pdf"
 			(at 168.91 99.06 0)
 			(effects
 				(font
@@ -6933,7 +7126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Through Hole DO-35"
+		(property "Description" "DIODE STANDARD 100V 300MA SOD123"
 			(at 168.91 99.06 0)
 			(effects
 				(font
@@ -6942,7 +7135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "1N4148FS-ND "
+		(property "Digi-Key Part No." "1N4148W-FDICT-ND"
 			(at 168.91 99.06 0)
 			(effects
 				(font
@@ -6951,7 +7144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/onsemi/1N4148/458603"
+		(property "Link" "https://www.digikey.com/en/products/detail/diodes-incorporated/1N4148W-7-F/814371"
 			(at 168.91 99.06 0)
 			(effects
 				(font
@@ -6960,7 +7153,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "Diodes Incorporated"
 			(at 168.91 99.06 0)
 			(effects
 				(font
@@ -6969,7 +7162,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "1N4148"
+		(property "Manufacturer PN" "1N4148W-7-F"
 			(at 168.91 99.06 0)
 			(effects
 				(font
@@ -7141,7 +7334,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf"
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
 			(at 175.26 90.17 0)
 			(effects
 				(font
@@ -7150,7 +7343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 0.47UF 100V X7S RADIAL"
+		(property "Description" "CAP CER 0.47UF 50V X7R 0805"
 			(at 175.26 90.17 0)
 			(effects
 				(font
@@ -7159,7 +7352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Part No." "445-180414-1-ND "
+		(property "Digi-Key Part No." "478-KGM21AR71H474JUCT-ND"
 			(at 175.26 90.17 90)
 			(effects
 				(font
@@ -7168,7 +7361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 175.26 90.17 90)
 			(effects
 				(font
@@ -7177,7 +7370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" "FA14X7S2A474KRU06"
+		(property "Manufacturer PN" "KGM21AR71H474JU"
 			(at 175.26 90.17 90)
 			(effects
 				(font
@@ -7186,7 +7379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/FA14X7S2A474KRU06/5865817"
+		(property "Link" "https://www.digikey.com/en/products/detail/kyocera-avx/KGM21AR71H474JU/6797430"
 			(at 175.26 90.17 90)
 			(effects
 				(font

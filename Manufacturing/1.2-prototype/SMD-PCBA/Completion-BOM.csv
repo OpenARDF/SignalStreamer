@@ -1,0 +1,13 @@
+References,Quantity per unit,Unit,Value,Manufacturer,Manufacturer part number,Footprint,Assembly,Description,Source
+H201,1,board,PCB,,,,Kit hardware,Bare dual-footprint board from the 1.2 Gerber and drill package,
+H202,1,piece,Lipstick Tube,,,,Kit hardware,"Round tuning tube, approximately 65 mm long, 16.6 mm nominal OD at enclosure wall",https://www.amazon.com/gp/product/B0CKPK8RBL/ref=ox_sc_act_title_1?smid=A30NO49AH0M5DA&psc=1
+H203,1,piece,Amidon Toroid,Amidon,T130-2,,Kit hardware,T130-2 Powdered Iron Toroid,https://amidoncorp.com/t130-2/
+H204,1,piece,Amidon Ferrite Bead,Amidon,FB-31-4852,,Kit hardware,FB-31-4852 Ferrite Bead,https://amidoncorp.com/fb-31-4852/
+H205,15,pieces,Cable Ties,,,,Kit hardware,"Nylon cable ties, 100 mm long by 3 mm wide",
+H206,3.2,m,Magnet Wire #24,,,,Kit hardware,24 AWG enamelled copper. Cut 2.05 m for T101 primary and 1.15 m for L101.,
+H207,13.8,m,Antenna wire,,,,Kit hardware,"Insulated stranded copper, 14–22 AWG. Maximum insulation OD 4.2 mm. Cut to deployment lengths.",
+H208,4,pieces,PCB mounting screws,Polycase,SCREWS-MBR-100,,Kit hardware,"PCB boss screws, #4-24 by 1/4 inch. SCREWS-MBR-100 is a bag of 100.",
+H209,0.15,m,Magnet wire #22,,,,Kit hardware,22 AWG enamelled copper for the two-turn transformer secondary.,
+J105,1,piece,BNC,Amphenol RF,31-5431,SignalStreamer:BNC_31-5431,Hand installation,Right angle BNC jack,
+"LP1, LP2, LP3, LP4, LP5",5,piece,LED light pipe,VCC,LFB063CTP,,Kit hardware,Press fit into machined cover; one per LED,
+N201,1,case,PolyCase Box & Screws,PolyCase,SL-42PMBR,,Kit hardware,"SL-42PMBR cover, base and closure screws, machined to the SignalStreamer 1.2 drawing",https://www.polycase.com/sl-42p#SL-42PMBR

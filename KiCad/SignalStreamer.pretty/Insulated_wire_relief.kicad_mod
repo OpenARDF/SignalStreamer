@@ -1,0 +1,72 @@
+(footprint "Insulated_wire_relief"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "5.2 mm unplated through-hole for insulated antenna wire")
+	(property "Reference" "REF**"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(uuid "4aec1b82-8301-402a-a40d-e7c859178d3a")
+		(effects
+			(font
+				(size 0.85 0.85)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Insulated_wire_relief"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(uuid "8c8c8416-7296-41d1-8fc1-0e92463122f4")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0357ebc3-c33f-43b5-a52c-97f578e5aaaf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0770f84f-c3fb-4e32-8721-203519dfdf73")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.85 -2.85)
+		(end 2.85 2.85)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "712c6806-3cc6-4d63-ad13-e75338d255a5")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 5.2 5.2)
+		(drill 5.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "f8f811a2-b167-41f1-a4a2-a96eaad3f670")
+	)
+	(embedded_fonts no)
+)

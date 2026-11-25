@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 1260 891"><rect width="1260" height="891" fill="white"/><g font-family="Arial, sans-serif" fill="#172d3b">
+<text x="42" y="43" font-size="32" font-weight="700">SignalStreamer enclosure machining</text>
+<text x="42" y="71" font-size="19" font-weight="400">Polycase SL-42PMBR   /   base and cover in assembled position</text>
+<text x="974" y="42" font-size="23" font-weight="700">SS-MECH-1.2</text>
+<text x="974" y="69" font-size="16" font-weight="400">Prototype   ·   sheet 1 of 1</text>
+<path d="M42 88 L1218 88" fill="none" stroke="#324b58" stroke-width="1.4" stroke-dasharray="none"/>
+<text x="43" y="119" font-size="19" font-weight="700">Cover exterior</text>
+<text x="43" y="140" font-size="15" font-weight="400">Looking toward −Y. BNC end is on the right.</text>
+<rect x="72.59375" y="154.984375" width="404.8125" height="250.03125" rx="25" fill="none" stroke="#324b58" stroke-width="2"/>
+<path d="M62 280 L493 280" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M275 146 L275 414" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<circle cx="161.54375" cy="373.345" r="5.572125" fill="#e3eff1" stroke="#164957" stroke-width="1.65"/>
+<path d="M152.971625 373.345 L170.115875 373.345" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M161.54375 364.772875 L161.54375 381.91712500000006" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<circle cx="187.11875" cy="373.345" r="5.572125" fill="#e3eff1" stroke="#164957" stroke-width="1.65"/>
+<path d="M178.546625 373.345 L195.690875 373.345" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M187.11875 364.772875 L187.11875 381.91712500000006" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<circle cx="212.69375000000002" cy="373.345" r="5.572125" fill="#e3eff1" stroke="#164957" stroke-width="1.65"/>
+<path d="M204.12162500000002 373.345 L221.26587500000002 373.345" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M212.69375000000002 364.772875 L212.69375000000002 381.91712500000006" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<circle cx="238.26875" cy="373.345" r="5.572125" fill="#e3eff1" stroke="#164957" stroke-width="1.65"/>
+<path d="M229.696625 373.345 L246.840875 373.345" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M238.26875 364.772875 L238.26875 381.91712500000006" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<circle cx="263.84375" cy="373.345" r="5.572125" fill="#e3eff1" stroke="#164957" stroke-width="1.65"/>
+<path d="M255.27162499999997 373.345 L272.415875 373.345" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M263.84375 364.772875 L263.84375 381.91712500000006" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<text x="306" y="271" font-size="14" font-weight="400">+X →</text>
+<text x="281" y="353" font-size="14" font-weight="400">+Z ↓</text>
+<text x="301" y="375" font-size="16" font-weight="700">5 × P</text>
+<text x="140" y="430" font-size="15" font-weight="400">Tube side (+Z) along this edge</text>
+<text x="552" y="119" font-size="19" font-weight="700">BNC end (+X)</text>
+<text x="552" y="140" font-size="15" font-weight="400">Looking toward −X. +Z is left.</text>
+<rect x="580.31875" y="189.2833" width="233.36249999999998" height="111.9251" rx="10" fill="none" stroke="#324b58" stroke-width="2"/>
+<path d="M569 234 L826 234" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<circle cx="650.22215" cy="234.0" r="10.5" fill="#e3eff1" stroke="#164957" stroke-width="1.65"/>
+<path d="M636.72215 234.0 L663.72215 234.0" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M650.22215 220.5 L650.22215 247.5" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<circle cx="697.0" cy="235.5113" r="24.49195" fill="#e3eff1" stroke="#164957" stroke-width="1.65"/>
+<path d="M669.50805 235.5113 L724.49195 235.5113" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M697.0 208.01935 L697.0 263.00325" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<circle cx="739.82215" cy="234.0" r="10.5" fill="#e3eff1" stroke="#164957" stroke-width="1.65"/>
+<path d="M726.32215 234.0 L753.32215 234.0" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M739.82215 220.5 L739.82215 247.5" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<text x="639" y="283" font-size="13" font-weight="400">W3</text>
+<text x="691" y="283" font-size="13" font-weight="400">B</text>
+<text x="735" y="283" font-size="13" font-weight="400">W2</text>
+<text x="917" y="119" font-size="19" font-weight="700">Vertical-wire end (−X)</text>
+<text x="917" y="140" font-size="15" font-weight="400">Looking toward +X. +Z is right.</text>
+<rect x="939.31875" y="189.2833" width="233.36249999999998" height="111.9251" rx="10" fill="none" stroke="#324b58" stroke-width="2"/>
+<path d="M928 234 L1185 234" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<circle cx="1056" cy="234" r="10.5" fill="#e3eff1" stroke="#164957" stroke-width="1.65"/>
+<path d="M1042.5 234 L1069.5 234" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M1056 220.5 L1056 247.5" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<text x="1045" y="283" font-size="13" font-weight="400">W1</text>
+<text x="553" y="338" font-size="19" font-weight="700">Tube side (+Z)</text>
+<text x="553" y="359" font-size="15" font-weight="400">Looking toward −Z. BNC end is on the right.</text>
+<rect x="767.255" y="369.89236" width="237.49000000000004" height="70.35292000000001" rx="7" fill="none" stroke="#324b58" stroke-width="2"/>
+<path d="M756 398 L1018 398" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<circle cx="931.375" cy="398.143" r="22.0" fill="#e3eff1" stroke="#164957" stroke-width="1.65"/>
+<path d="M906.375 398.143 L956.375 398.143" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M931.375 373.143 L931.375 423.143" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<circle cx="971.3050000000001" cy="398" r="6.6000000000000005" fill="#e3eff1" stroke="#164957" stroke-width="1.65"/>
+<path d="M961.705 398 L980.9050000000001 398" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<path d="M971.3050000000001 388.4 L971.3050000000001 407.6" fill="none" stroke="#73838d" stroke-width="1.4" stroke-dasharray="7 5 2 5"/>
+<text x="918" y="457" font-size="13" font-weight="400">T</text>
+<text x="962" y="457" font-size="13" font-weight="400">W4</text>
+<path d="M42 471 L1218 471" fill="none" stroke="#324b58" stroke-width="1.4" stroke-dasharray="none"/>
+<text x="43" y="501" font-size="21" font-weight="700">Finished holes</text>
+<text x="43" y="526" font-size="16" font-weight="700">ID</text>
+<text x="110" y="526" font-size="16" font-weight="700">Face</text>
+<text x="327" y="526" font-size="16" font-weight="700">Finished diameter</text>
+<text x="584" y="526" font-size="16" font-weight="700">Center location (mm, signed from the stock center planes)</text>
+<text x="43" y="555" font-size="15" font-weight="400">P × 5</text>
+<text x="110" y="555" font-size="15" font-weight="400">Cover</text>
+<text x="327" y="555" font-size="15" font-weight="400">0.117 ±0.005 in</text>
+<text x="584" y="555" font-size="15" font-weight="400">Z +24.892 (+0.980 in). X −30.255, −23.435, −16.615, −9.795, −2.975.</text>
+<text x="43" y="581" font-size="15" font-weight="400">B</text>
+<text x="110" y="581" font-size="15" font-weight="400">BNC end (+X)</text>
+<text x="327" y="581" font-size="15" font-weight="400">0.551 ±0.005 in</text>
+<text x="584" y="581" font-size="15" font-weight="400">Z 0. Center 0.739 in above exterior base bottom (Y −0.4318 nominal).</text>
+<text x="43" y="607" font-size="15" font-weight="400">T</text>
+<text x="110" y="607" font-size="15" font-weight="400">Tube side (+Z)</text>
+<text x="327" y="607" font-size="15" font-weight="400">20.0 ±0.3 mm</text>
+<text x="584" y="607" font-size="15" font-weight="400">X +20.625, Y −0.065. Locate center within ±0.25 mm on each axis.</text>
+<text x="43" y="633" font-size="15" font-weight="400">W1</text>
+<text x="110" y="633" font-size="15" font-weight="400">Vertical end (−X)</text>
+<text x="327" y="633" font-size="15" font-weight="400">6.0 ±0.3 mm</text>
+<text x="584" y="633" font-size="15" font-weight="400">Z 0, Y 0.</text>
+<text x="43" y="659" font-size="15" font-weight="400">W2 / W3</text>
+<text x="110" y="659" font-size="15" font-weight="400">BNC end (+X)</text>
+<text x="327" y="659" font-size="15" font-weight="400">6.0 ±0.3 mm each</text>
+<text x="584" y="659" font-size="15" font-weight="400">Z −12.2349 (W2) and +13.3651 (W3), Y 0.</text>
+<text x="43" y="685" font-size="15" font-weight="400">W4</text>
+<text x="110" y="685" font-size="15" font-weight="400">Tube side (+Z)</text>
+<text x="327" y="685" font-size="15" font-weight="400">6.0 ±0.3 mm</text>
+<text x="584" y="685" font-size="15" font-weight="400">X +38.775, Y 0.</text>
+<path d="M42 703 L1218 703" fill="none" stroke="#324b58" stroke-width="1.4" stroke-dasharray="none"/>
+<text x="43" y="732" font-size="19" font-weight="700">Datums and workmanship</text>
+<text x="43" y="759" font-size="15" font-weight="400">X is along the length toward BNC. Z is across the width toward the tube. Y is toward the cover. Y 0 is the stock STEP parting plane.</text>
+<text x="43" y="783" font-size="15" font-weight="400">X 0 and Z 0 pass through the center of the four PCB bosses. Through cuts are normal to their local nominal faces. End and side openings cross both halves.</text>
+<text x="43" y="807" font-size="15" font-weight="400">Reuse Polycase J-29441AC / J-29441AB Rev 0 hole finish and three-decimal inch tolerance for P and B. P and B center locations ±0.127 mm per axis.</text>
+<text x="43" y="831" font-size="15" font-weight="400">Wire hole center locations ±0.30 mm. Remove burrs. Keep the press-fit bore and entry treatment as supplied on J-29441A. Inspect with the enclosure assembled.</text>
+<path d="M42 849 L1218 849" fill="none" stroke="#324b58" stroke-width="1.4" stroke-dasharray="none"/>
+<text x="43" y="875" font-size="15" font-weight="400">OpenARDF   ·   25 Nov 2026</text>
+<text x="720" y="875" font-size="14" font-weight="400">Units as shown   ·   views for orientation   ·   use dimensions and STEP</text>
+</g></svg>

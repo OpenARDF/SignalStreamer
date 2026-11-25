@@ -40,6 +40,8 @@ The board retains the direct-coax option for builds outside the chassis. Omit J1
 
 ## Digital verification
 
+The shared board uses 0.50 mm detector and ground traces and 1.00 mm RF traces. All 31 through vias have 1.00 mm copper pads and 0.50 mm drills, giving a nominal 0.25 mm annular ring on both layers. KiCad enforces the 0.50 mm trace minimum and the through-via dimensions. The ground pour uses a 0.50 mm minimum copper width and 0.50 mm thermal spokes.
+
 Each selected detector has the same 18 nets and pin connections as Rev 1.1 when component references are mapped to their counterparts. KiCad 10.0.8 reported zero ERC and DRC violations, zero unconnected items and zero schematic/PCB parity issues. The two named variants produced identical copper, mask, silkscreen and outline plots. The SMD BOM and position file agree on 28 placements and the stencil has 57 apertures.
 
 FreeCAD reopened the native file and the two-solid machining STEP. The five optical centers coincide with the lid holes for both populated boards. Neither populated board intersects either machined shell at nominal dimensions. All four modeled 4.2 mm leads clear both populated PCBs, the machined shells and one another. The bare tube is 5.08 mm from RV201. The nearest 3.0 mm wide × 1.2 mm thick strap leaves 3.88 mm to RV201, 1.48 mm to D201 and 0.65 mm to the cover at nominal dimensions. The W1 jacket has 0.90 mm nominal clearance at the cover and 0.97 mm below its return bend at the base. Physical results belong in the first-article record below.

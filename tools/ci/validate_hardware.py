@@ -44,17 +44,23 @@ def check_rule_limits(cli, project, board, work):
     if rules["min_track_width"] < 0.5:
         raise ValueError("Project minimum track width must be at least 0.50 mm")
 
-    # Exercise the effective rules with an undersized through via. This also
-    # catches disabled checks and rule conditions that no longer select a via.
+    # Exercise effective rules on real objects in the scratch copy, so disabled
+    # checks or custom rules that no longer apply are caught as well.
+    track = next(item for item in board.GetTracks() if not isinstance(item, pcb.PCB_VIA))
+    track.SetWidth(pcb.FromMM(0.49))
     via = next(v for v in board.GetTracks() if isinstance(v, pcb.PCB_VIA) and v.GetIsFree())
     via.SetDrill(pcb.FromMM(0.49))
     via.SetWidth(pcb.FromMM(0.97))
     pcb.SaveBoard(str(project.with_suffix(".kicad_pcb")), board)
     report = work / "via-rule-probe.json"
-    print("Control test: DRC must reject the deliberately undersized scratch via.", flush=True)
+    print("Control test: DRC must reject the undersized track and via in the scratch copy.", flush=True)
     subprocess.run([cli, "pcb", "drc", "--format", "json", "--units", "mm", "-o", report,
-                    project.with_suffix(".kicad_pcb")], check=True)
-    violations = [v for v in json.loads(report.read_text())["violations"]
+                    project.with_suffix(".kicad_pcb")], check=True, env={**os.environ, "LC_ALL": "C"})
+    findings = json.loads(report.read_text())["violations"]
+    if not any(v["type"] == "track_width" and any(i["uuid"] == track.m_Uuid.AsString() for i in v["items"])
+               for v in findings):
+        raise ValueError("KiCad must reject a 0.49 mm track")
+    violations = [v for v in findings
                   if any(i["uuid"] == via.m_Uuid.AsString() for i in v["items"])]
     for kind, label, floor in (("annular_width", "annular width", 0.25), ("drill_out_of_range", "hole", 0.50)):
         limits = [float(m[1]) for v in violations if v["type"] == kind

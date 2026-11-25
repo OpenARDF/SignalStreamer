@@ -76,11 +76,11 @@ Use `--kicad-cli PATH` for a KiCad installation outside PATH or `--output DIR` f
 
 ## Pull request validation
 
-The **Hardware validation** check runs for changes under `KiCad/`, `Mechanical/`, `Manufacturing/`, `tools/` and `.github/`. It refills a scratch copy of the PCB, checks ERC and DRC with schematic parity, and exercises the through-via rules with a deliberately undersized via in that copy. It traces the filled GND regions back to the J105 shield and checks that free GND vias contact pours on both faces.
+The **Hardware validation** check runs for changes under `KiCad/`, `Mechanical/`, `Manufacturing/`, `tools/` and `.github/`. It refills a scratch copy of the PCB, checks ERC and DRC with schematic parity, and exercises the track and through-via rules with a deliberately undersized track and via in that copy. It traces the filled GND regions back to the J105 shield and checks that free GND vias contact pours on both faces.
 
 Both assembly exports must pass the manufacturing exporter. The seven Gerbers, separate plated and non-plated drill files, job file, BOMs, placement file and stencil are compared with the tracked outputs. If fabrication or placement data are stale, regenerate them using the command above and include the changed files in the PR.
 
-FreeCAD checks both fresh STEP populations in the native enclosure. It measures LED and light-pipe alignment, BNC registration, and L101 strap clearance to RV101 and the cover, and checks the two machining STEP solids against the enclosure. The measurements use the nominal Rev 1.2 models.
+FreeCAD checks both fresh STEP populations in the native enclosure. It measures LED and light-pipe alignment, BNC registration, and L101 strap clearance to RV101 and the cover, and checks the two machining STEP solids against the enclosure. In the nominal Rev 1.2 models the optical axes must agree within 0.03 mm and the BNC barrel must center within 0.10 mm of its bore axis. Strap clearance must meet the documented 3.88 mm to RV101 and 0.65 mm to the cover, allowing 0.005 mm for rounding.
 
 To run the same checks locally, set `KICAD_CLI` to KiCad 10.0.8’s CLI, `KICAD_PYTHON` to its Python with `pcbnew`, and `FREECAD_PYTHON` to Python with FreeCAD 1.1.4. On macOS, set `FREECAD_LIB` to the bundle’s `Contents/Resources/lib` directory. Use a new temporary output directory.
 

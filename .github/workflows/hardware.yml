@@ -37,22 +37,6 @@ jobs:
       - name: Install pinned CAD tools and libraries
         if: steps.changes.outputs.needed == 'true'
         run: bash tools/ci/install-cad-macos.sh
-      - name: Trial only - simulate a stale plated drill file in the runner
-        run: |
-          python3 - <<'PYTHON'
-          from pathlib import Path
-          import re
-          from zipfile import ZipFile, ZIP_DEFLATED
-          path = Path("Manufacturing/1.2-prototype/SignalStreamer-bare-board.zip")
-          with ZipFile(path) as archive:
-              files = {name: archive.read(name) for name in archive.namelist()}
-          name = "SignalStreamer-PTH.drl"
-          files[name], count = re.subn(rb"^X[^\n]*\n", b"", files[name], count=1, flags=re.M)
-          assert count == 1
-          with ZipFile(path, "w", ZIP_DEFLATED) as archive:
-              for name, data in files.items():
-                  archive.writestr(name, data)
-          PYTHON
       - name: Check design, manufacturing files and enclosure fit
         if: steps.changes.outputs.needed == 'true'
         run: |

@@ -25,8 +25,20 @@ freecad=$(mount_release FreeCAD \
 config="$RUNNER_TEMP/kicad-config"
 mkdir -p "$config/10.0"
 cp "$kicad/SharedSupport/template/"{fp-lib-table,sym-lib-table} "$config/10.0/"
+# The bundled Fontconfig predates some rules in Homebrew's global configuration.
+# Use the host's installed fonts directly for both KiCad and the assembly renderer.
+cat >"$RUNNER_TEMP/fonts.conf" <<'XML'
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
+<fontconfig>
+  <dir>/System/Library/Fonts</dir>
+  <dir>/Library/Fonts</dir>
+  <cachedir prefix="xdg">fontconfig</cachedir>
+</fontconfig>
+XML
 command -v rsvg-convert >/dev/null || brew install librsvg
 {
+    echo "FONTCONFIG_FILE=$RUNNER_TEMP/fonts.conf"
     echo "KICAD_CONFIG_HOME=$config"
     echo "KICAD_CLI=$kicad/MacOS/kicad-cli"
     echo "KICAD_PYTHON=$kicad/Frameworks/Python.framework/Versions/Current/bin/python3"

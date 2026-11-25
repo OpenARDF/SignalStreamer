@@ -1,14 +1,14 @@
-(footprint "LED_D5mm_Formed_P5.08mm"
+(footprint "LED_D5mm_P2.54mm_Dual"
 	(version 20260206)
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "WP7113ID 5 mm LED with leads formed to 5.08 mm pitch for a coaxial alternate SMD emitter")
+	(descr "WP7113ID straight leads, 2.54 mm pitch; small front annuli clear the alternate 0805 and full-size back lands support hand soldering.")
 	(tags "LED")
 	(property "Reference" "REF**"
 		(at 1.27 -3.96 0)
 		(layer "F.SilkS")
-		(uuid "ef58526a-5c66-4e25-858e-2b633ad8cdf9")
+		(uuid "224c0f08-a007-4fc2-b7b5-fe9e8ad48640")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "LED_D5.0mm"
 		(at 1.27 3.96 0)
 		(layer "F.Fab")
-		(uuid "774b6b42-6a3b-4f4c-9ba9-647834670fcd")
+		(uuid "7a49f09f-c5d6-400b-9d3f-0586495ce651")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0b29c821-044d-4f5b-8537-0488b580efe0")
+		(uuid "5ab0ff5b-5ac3-45f7-9ac7-b3f10c39f507")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b03aa47a-8fa0-41a5-864e-2dd0f3f3964c")
+		(uuid "ff505f8f-850b-4780-a324-b322a7eb6f98")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53,7 +53,7 @@
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "9d022fe0-1157-4e64-999a-a917d3747171")
+		(uuid "8a333fa8-8caa-4ab9-afdf-ca453355c32f")
 		(effects
 			(font
 				(size 1 1)
@@ -71,7 +71,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "f75e3300-cdaa-441d-9f38-7887ede81c4b")
+		(uuid "b0d6cbbd-6271-4c3f-a412-737165b5a24b")
 	)
 	(fp_rect
 		(start -1.94 -3.21)
@@ -82,7 +82,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "d89e677b-3af0-4b9f-a06f-0e0e9f4d25c3")
+		(uuid "2594cbe0-313f-4fea-bfcf-3a9344b05df8")
 	)
 	(fp_line
 		(start -1.23 -1.469694)
@@ -92,7 +92,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "8a87c29b-2d4a-4483-a44a-559bd2225ae1")
+		(uuid "2f254552-7ea7-4522-8f16-8c04ae9ffae6")
 	)
 	(fp_arc
 		(start -1.23 -1.469694)
@@ -103,7 +103,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "cd5351c0-f1ec-4ee2-91d5-9e436a065688")
+		(uuid "0f831fc5-8154-4d36-b248-5141cab0eded")
 	)
 	(fp_circle
 		(center 1.27 0)
@@ -114,12 +114,12 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "fbce95cc-3195-452c-bf9c-1f903b2633a3")
+		(uuid "0cfa2e06-6826-44bb-816f-583da5425d89")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 1.27 0 0)
 		(layer "F.Fab")
-		(uuid "0a0a51f7-82a9-4cda-815b-ee24410441e0")
+		(uuid "a6652f08-1ef9-4c78-bec8-9b4883f11ceb")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -131,28 +131,51 @@
 		(at 1.27 0)
 		(size 2)
 		(layer "F.Fab")
-		(uuid "65cd53bb-79d3-4e9b-bb46-357bf4e8c388")
+		(uuid "f0775486-6bd5-41c5-84a2-bf3c8607e5a0")
 	)
-	(pad "1" thru_hole rect
-		(at -1.27 0)
-		(size 1.8 1.8)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.22 1.22)
 		(drill 0.9)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "d30c790e-0b86-4eee-b66c-7c063bf26eb0")
+		(thermal_bridge_angle 90)
+		(uuid "b0ce5a4e-cf6f-494f-913e-48d658a5556f")
+		(padstack
+			(mode front_inner_back)
+			(layer "Inner"
+				(shape rect)
+				(size 1.8 1.8)
+			)
+			(layer "B.Cu"
+				(shape rect)
+				(size 1.8 1.8)
+			)
+		)
 	)
 	(pad "2" thru_hole circle
-		(at 3.81 0)
-		(size 1.8 1.8)
+		(at 2.54 0)
+		(size 1.22 1.22)
 		(drill 0.9)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "9b7e52a5-afdc-4fd9-ab39-7be55db79a48")
+		(uuid "607d383e-1996-4dc8-b766-52d3aabd76ad")
+		(padstack
+			(mode front_inner_back)
+			(layer "Inner"
+				(shape circle)
+				(size 1.8 1.8)
+			)
+			(layer "B.Cu"
+				(shape circle)
+				(size 1.8 1.8)
+			)
+		)
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/3D/WP7113ID-formed.step"
+	(model "${KICAD10_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0 0 -3)
 		)
 		(scale
 			(xyz 1 1 1)

@@ -5318,7 +5318,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SignalStreamer:LED_D5mm_Formed_P5.08mm"
+		(property "Footprint" "SignalStreamer:LED_D5mm_P2.54mm_Dual"
 			(at 322.58 232.55 0)
 			(hide yes)
 			(show_name no)
@@ -6341,7 +6341,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "SignalStreamer:LED_0805_2012Metric_Dual"
 			(at 161.29 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -6480,7 +6480,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SignalStreamer:LED_D5mm_Formed_P5.08mm"
+		(property "Footprint" "SignalStreamer:LED_D5mm_P2.54mm_Dual"
 			(at 251.46 217.31 0)
 			(hide yes)
 			(show_name no)
@@ -7907,7 +7907,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "SignalStreamer:LED_0805_2012Metric_Dual"
 			(at 203.2 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -8046,7 +8046,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SignalStreamer:LED_D5mm_Formed_P5.08mm"
+		(property "Footprint" "SignalStreamer:LED_D5mm_P2.54mm_Dual"
 			(at 38.1 232.55 0)
 			(hide yes)
 			(show_name no)
@@ -10198,7 +10198,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SignalStreamer:LED_D5mm_Formed_P5.08mm"
+		(property "Footprint" "SignalStreamer:LED_D5mm_P2.54mm_Dual"
 			(at 109.22 247.79 0)
 			(hide yes)
 			(show_name no)
@@ -10337,7 +10337,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "SignalStreamer:LED_0805_2012Metric_Dual"
 			(at 243.84 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -11044,7 +11044,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "SignalStreamer:LED_0805_2012Metric_Dual"
 			(at 222.25 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -11600,7 +11600,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "SignalStreamer:LED_0805_2012Metric_Dual"
 			(at 181.61 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -12642,7 +12642,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SignalStreamer:LED_D5mm_Formed_P5.08mm"
+		(property "Footprint" "SignalStreamer:LED_D5mm_P2.54mm_Dual"
 			(at 180.34 232.55 0)
 			(hide yes)
 			(show_name no)

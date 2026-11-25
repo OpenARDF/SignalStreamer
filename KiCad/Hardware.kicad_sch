@@ -894,7 +894,7 @@
 				)
 			)
 		)
-		(property "Description" "Nylon cable ties, 100 mm long by 3 mm wide"
+		(property "Description" "Nylon cable ties, 100 mm long, up to 3.0 mm wide by 1.2 mm thick"
 			(at 119.38 56 0)
 			(hide yes)
 			(show_name no)

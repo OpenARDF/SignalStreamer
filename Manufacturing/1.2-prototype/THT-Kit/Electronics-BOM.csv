@@ -1,0 +1,8 @@
+References,Quantity per unit,Unit,Value,Manufacturer,Manufacturer part number,Footprint,Assembly,Description,Source
+"C201, C202, C203, C204, C205, C206, C207, C208, C209, C210, C211",11,piece,470nF,KEMET,C315C474K5R5TA,SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk,Hand installation,"470 nF, X7R, 50 V radial MLCC",
+"D201, D202",2,piece,1N5711,Microchip Technology,1N5711,SignalStreamer:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp_BackSilk,Hand installation,Schottky detector diode,https://www.digikey.com/en/products/detail/microchip-technology/1N5711/7616024
+"D203, D205, D207, D209, D211",5,piece,WP7113ID,Kingbright,WP7113ID,SignalStreamer:LED_D5mm_P2.54mm_Dual,Hand installation,5 mm red diffused LED,
+"D204, D206, D208, D210",4,piece,1N4148,Vishay,1N4148-TAP,SignalStreamer:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp_BackSilk,Hand installation,Switching diode,
+J105,1,piece,BNC,Amphenol RF,31-5431,SignalStreamer:BNC_31-5431,Hand installation,Right angle BNC jack,
+"R201, R202, R203, R204, R205",5,piece,470,YAGEO,CFR-25JB-52-470R,SignalStreamer:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical_BackSilk,Hand installation,470 ohm axial resistor,
+RV101,1,piece,2k,Bourns Inc.,PV36W202C01B00,SignalStreamer:Potentiometer_Bourns_3296W_Vertical_BackSilk,Hand installation,TRIMMER 2K OHM 0.5W PC PIN TOP,https://www.digikey.com/en/products/detail/bourns-inc/PV36W202C01B00/666507

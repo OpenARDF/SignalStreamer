@@ -1,0 +1,12 @@
+(version 1)
+# Each pair shares its optical axis. The SMD-PCBA and THT-Kit population
+# settings select one emitter. All copper, mask, and hole checks still apply.
+(rule "Mutually exclusive LED bodies"
+  (condition "(A.Reference == 'D103' && B.Reference == 'D203') || (A.Reference == 'D105' && B.Reference == 'D205') || (A.Reference == 'D107' && B.Reference == 'D207') || (A.Reference == 'D109' && B.Reference == 'D209') || (A.Reference == 'D111' && B.Reference == 'D211')")
+  (constraint courtyard_clearance (min -1mm)))
+
+# A through via has more room for a copper ring than the dual-assembly LED pads.
+(rule "Through-via drill and annular ring"
+  (condition "A.Type == 'Via' && A.Via_Type == 'Through'")
+  (constraint hole_size (min 0.5mm))
+  (constraint annular_width (min 0.25mm)))

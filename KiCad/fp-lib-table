@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SignalStreamer")(type "KiCad")(uri "${KIPRJMOD}/SignalStreamer.pretty")(options "")(descr "SignalStreamer wound components and wire terminals"))
+)

@@ -1,0 +1,63 @@
+name: SignalStreamer hardware
+on:
+  pull_request:
+    branches: [main]
+  merge_group:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Hardware validation
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+      - name: Identify hardware changes
+        id: changes
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          needed=true
+          if [[ "$EVENT" == pull_request ]]; then
+            # HEAD is the PR test merge. Include both sides of moves and deletions.
+            if git diff --quiet --no-renames HEAD^1 HEAD -- KiCad Mechanical Manufacturing tools .github; then
+              needed=false
+            else
+              status=$?
+              [[ $status == 1 ]] || exit "$status"
+            fi
+          fi
+          echo "needed=$needed" >> "$GITHUB_OUTPUT"
+      - name: Install pinned CAD tools and libraries
+        if: steps.changes.outputs.needed == 'true'
+        run: bash tools/ci/install-cad-macos.sh
+      - name: Trial only - simulate a stale plated drill file in the runner
+        run: |
+          python3 - <<'PYTHON'
+          from pathlib import Path
+          import re
+          from zipfile import ZipFile, ZIP_DEFLATED
+          path = Path("Manufacturing/1.2-prototype/SignalStreamer-bare-board.zip")
+          with ZipFile(path) as archive:
+              files = {name: archive.read(name) for name in archive.namelist()}
+          name = "SignalStreamer-PTH.drl"
+          files[name], count = re.subn(rb"^X[^\n]*\n", b"", files[name], count=1, flags=re.M)
+          assert count == 1
+          with ZipFile(path, "w", ZIP_DEFLATED) as archive:
+              for name, data in files.items():
+                  archive.writestr(name, data)
+          PYTHON
+      - name: Check design, manufacturing files and enclosure fit
+        if: steps.changes.outputs.needed == 'true'
+        run: |
+          "$KICAD_PYTHON" tools/ci/validate_hardware.py --output "$RUNNER_TEMP/hardware"
+          "$FREECAD_PYTHON" tools/ci/check_fit.py "$RUNNER_TEMP/hardware"
+      - name: Report result for unrelated changes
+        if: steps.changes.outputs.needed == 'false'
+        run: echo "No hardware inputs or validation tools changed."

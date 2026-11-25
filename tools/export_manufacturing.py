@@ -14,7 +14,7 @@ from decimal import Decimal
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
-from assembly_map import locator
+from assembly_map import locator, read_ipc
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,6 +24,78 @@ SCHEMATIC = PROJECT.with_suffix(".kicad_sch")
 VARIANTS = ("SMD-PCBA", "THT-Kit")
 BOM_FIELDS = "Reference,Value,Manufacturer,Manufacturer PN,Footprint,Assembly,Description,Qty per board,Unit,Link"
 BOM_LABELS = "Ref,Value,Manufacturer,MPN,Footprint,Assembly,Description,Amount,Unit,Source"
+
+SMD_TO_THT = {
+    f"{kind}{number}": f"{kind}{number + 100}"
+    for kind, last in (("C", 111), ("R", 105), ("D", 111))
+    for number in range(101, last + 1)
+}
+SHARED_THT_PINS = {"RV101": {"1", "2", "3"}, "L101": {"1", "2"},
+                   "T101": {"1", "2", "3", "4"}, "J105": {"1", "2"}}
+
+
+def check_footprints(doc):
+    # Inspect the common bare board before KiCad filters either assembly variant.
+    components = {c.get("refDes"): c for c in doc.findall(".//Component")}
+    smd, kit = set(SMD_TO_THT), set(SMD_TO_THT.values())
+    expected = smd | kit | set(SHARED_THT_PINS)
+    actual = {r for r in components if re.fullmatch(r"(?:C|R|RV|D|L|T)\d+|J105", r)}
+    if actual != expected:
+        raise ValueError(f"Unexpected or missing board footprints: {actual ^ expected}")
+
+    # Inspect the plotted artwork so hidden fields and F.Fab labels cannot pass as printed ink.
+    front_tht = {"L101", "T101", "J105"}
+    front_refs = smd | front_tht
+    back_refs = kit | (set(SHARED_THT_PINS) - front_tht) | {f"J{i}" for i in range(101, 105)}
+    # Include wire reliefs and other through-hole features even when their references are hidden.
+    back_artwork = {r for r, c in components.items() if c.get("mountType") == "THMT"} - front_tht
+    front_artwork = {r for r, c in components.items() if c.get("mountType") == "SMT"} | front_tht
+    for layer, required, forbidden in (("F.Silkscreen", front_refs, back_artwork),
+                                       ("B.Silkscreen", back_refs, front_artwork)):
+        printed = set()
+        for group in doc.findall(f".//LayerFeature[@layerRef='{layer}']/Set"):
+            ref = group.get("componentRef")
+            label = group.find("NonstandardAttribute[@name='TEXT']")
+            if ref in forbidden:
+                raise ValueError(f"{ref} has assembly artwork on the wrong layer ({layer})")
+            if label is None:
+                continue
+            value = label.get("value")
+            if layer == "F.Silkscreen" and value in ("ANT", "RADIAL"):
+                raise ValueError(f"The {value} wire legend belongs on B.Silkscreen")
+            if ref and value == ref and group.find("Features/UserSpecial/*") is not None:
+                printed.add(ref)
+        if required - printed:
+            raise ValueError(f"Missing references on {layer}: {sorted(required - printed)}")
+
+    plated = {stack.get("name") for stack in doc.findall(".//PadStackDef")
+              if stack.find("PadstackHoleDef[@platingStatus='PLATED']") is not None}
+    nets = defaultdict(dict)
+    drilled = defaultdict(set)
+    # Every through-hole terminal reaches front copper, including each winding end.
+    # The extra winding lands on the back have no drill or paste aperture.
+    for group in doc.findall(".//LayerFeature[@layerRef='F.Cu']/Set"):
+        for pad in group.findall("Pad"):
+            terminal = pad.find("PinRef")
+            if terminal is None:
+                continue
+            ref, pin = terminal.get("componentRef"), terminal.get("pin")
+            nets[ref][pin] = group.get("net")
+            if pad.get("padstackDefRef") in plated:
+                drilled[ref].add(pin)
+
+    for ref in sorted(expected):
+        if components[ref].get("mountType") != ("SMT" if ref in smd else "THMT"):
+            raise ValueError(f"Incorrect mounting technology on {ref}")
+        pins = SHARED_THT_PINS.get(ref, {"1", "2"})
+        if set(nets[ref]) != pins or not all(nets[ref].values()):
+            raise ValueError(f"Missing or unconnected terminals on {ref}: {nets[ref]}")
+        if drilled[ref] != (set() if ref in smd else pins):
+            raise ValueError(f"Incorrect plated holes on {ref}: {drilled[ref]}")
+
+    for a, b in SMD_TO_THT.items():
+        if nets[a] != nets[b] or nets[a]["1"] == nets[a]["2"]:
+            raise ValueError(f"Pin-to-net mismatch for {a} / {b}: {nets[a]} / {nets[b]}")
 
 
 def read_rows(path):
@@ -66,6 +138,8 @@ def export(cli, output, work):
 
     ipc = work / "board.xml"
     run("pcb", "export", "ipc2581", "--units", "mm", "-o", ipc, BOARD)
+    doc = read_ipc(ipc)
+    check_footprints(doc)
     populations = {}
     for variant in VARIANTS:
         folder = output / variant
@@ -86,7 +160,7 @@ def export(cli, output, work):
         expected = {r["Ref"] for r in rows if r["Footprint"]}
         if modeled != expected:
             raise ValueError(f"STEP population mismatch for {variant}: {modeled ^ expected}")
-        locator(ipc, variant, set(by_ref), work / (variant + ".svg"), folder / "Assembly.pdf")
+        locator(doc, variant, set(by_ref), work / (variant + ".svg"), folder / "Assembly.pdf")
         if variant == "SMD-PCBA":
             positions = folder / "Placement-mm.csv"
             run("pcb", "export", "pos", "--variant", variant, "--exclude-dnp", "--smd-only", "--format",
@@ -94,17 +168,17 @@ def export(cli, output, work):
             machine = [row for row in rows if row["Assembly"] == "Machine placement"]
             fitted = read_rows(positions)
             if ({row["Ref"] for row in fitted} != {row["Ref"] for row in machine}
-                    or len(fitted) != 28 or any(row["Side"] != "top" for row in fitted)
+                    or len(fitted) != len(SMD_TO_THT) or any(row["Side"] != "top" for row in fitted)
                     or any(not row["MPN"] for row in machine)):
-                raise ValueError("Machine BOM and front-side positions must describe the same 28 orderable parts")
+                raise ValueError("Machine BOM and front-side positions must describe the same 27 orderable parts")
             write_order(folder / "PCBA-BOM.csv", machine)
             write_order(folder / "Completion-BOM.csv", [row for row in rows if row not in machine])
             stencil = work / "stencil"
             run("pcb", "export", "gerbers", "--variant", variant, "--layers", "F.Paste",
                 "--no-protel-ext", "-o", stencil, BOARD)
             paste = next(stencil.glob("*.gbr"))
-            if paste.read_text().count("D03*") != 57:
-                raise ValueError("Expected 57 front-side paste apertures for 28 placed parts")
+            if paste.read_text().count("D03*") != 2 * len(SMD_TO_THT):
+                raise ValueError("Expected 54 front-side paste apertures for 27 placed parts")
             shutil.copy(paste, folder / "Front-stencil.gbr")
         else:
             write_order(folder / "Kit-BOM.csv", rows)
@@ -113,11 +187,9 @@ def export(cli, output, work):
                 raise ValueError("Kit electronics require manufacturer part numbers")
             write_order(folder / "Electronics-BOM.csv", electronics)
 
-    shared = {f"H{i}" for i in range(201, 210)} | {"J105", "L101", "T101", "N201"}
-    smd = {f"{part}{i}" for part, end in (("C", 112), ("D", 112), ("R", 106)) for i in range(101, end)}
-    kit = {ref[0] + str(int(ref[1:]) + 100) for ref in smd}
-    if (populations["SMD-PCBA"] != shared | smd | {"RV101"} | {f"LP{i}" for i in range(1, 6)}
-            or populations["THT-Kit"] != shared | kit | {"RV201"}):
+    shared = set(SHARED_THT_PINS) | {f"H{i}" for i in range(201, 210)} | {"N201"}
+    if (populations["SMD-PCBA"] != shared | set(SMD_TO_THT) | {f"LP{i}" for i in range(1, 6)}
+            or populations["THT-Kit"] != shared | set(SMD_TO_THT.values())):
         raise ValueError("Variant population differs from the Rev 1.2 assembly design")
 
 

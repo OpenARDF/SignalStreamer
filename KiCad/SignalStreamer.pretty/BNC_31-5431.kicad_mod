@@ -6,13 +6,13 @@
 	(descr "Amphenol RF 31-5431 with right-angle barrel and manufacturer specified PCB drills")
 	(tags "BNC Amphenol Horizontal")
 	(property "Reference" "REF**"
-		(at 0 4 0)
+		(at -0.0349 -5.02 90)
 		(layer "F.SilkS")
 		(uuid "bcdf9800-dcda-43b8-ba21-1a7fed12b34d")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.8 0.8)
+				(thickness 0.14)
 			)
 		)
 	)
@@ -56,7 +56,7 @@
 	(attr through_hole)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -7.5 -0.8339)
+		(start -7.5 -1.0)
 		(end -7.5 -4.6361)
 		(stroke
 			(width 0.12)
@@ -96,8 +96,8 @@
 		(uuid "e5d052bb-3a0a-495b-906d-8562fc512423")
 	)
 	(fp_line
-		(start 6.7467 2.3)
-		(end -6.7467 2.3)
+		(start 4.95 2.3)
+		(end -4.95 2.3)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -107,7 +107,7 @@
 	)
 	(fp_line
 		(start 7.5 -4.6361)
-		(end 7.5 -0.8339)
+		(end 7.5 -1.0)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -348,7 +348,7 @@
 		)
 	)
 	(pad "" np_thru_hole circle
-		(at -8.65 1.1)
+		(at -6.9 1.1)
 		(size 3.6 3.6)
 		(drill 3.6)
 		(layers "*.Cu" "*.Mask")
@@ -369,7 +369,7 @@
 		(uuid "ec143308-6179-4962-a276-26615e0dd7b9")
 	)
 	(pad "" np_thru_hole circle
-		(at 8.65 1.1)
+		(at 6.9 1.1)
 		(size 3.6 3.6)
 		(drill 3.6)
 		(layers "*.Cu" "*.Mask")

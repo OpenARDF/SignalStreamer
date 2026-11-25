@@ -4,4 +4,3 @@ References,Quantity per unit,Unit,Value,Manufacturer,Manufacturer part number,Fo
 "D103, D105, D107, D109, D111",5,piece,Red LED,Lite-On,LTST-C170KRKT,SignalStreamer:LED_0805_2012Metric_Dual,Machine placement,Red top-emitting 0805 LED,
 "D104, D106, D108, D110",4,piece,1N4148,Diodes Incorporated,1N4148W-7-F,Diode_SMD:D_SOD-123,Machine placement,DIODE STANDARD 100V 300MA SOD123,https://www.digikey.com/en/products/detail/diodes-incorporated/1N4148W-7-F/814371
 "R101, R102, R103, R104, R105",5,piece,470,YAGEO,RC0805FR-07470RL,Resistor_SMD:R_0805_2012Metric,Machine placement,RES 470 OHM 1% 1/8W 0805,https://www.digikey.com/en/products/detail/yageo/RC0805FR-07470RL/727976
-RV101,1,piece,2k,Bourns Inc.,3224W-1-202E,SignalStreamer:Trimmer_3224W,Machine placement,"2 kΩ 12-turn top-adjust SMD trimmer, 0.25 W",https://www.bourns.com/docs/Product-Datasheets/3224.pdf

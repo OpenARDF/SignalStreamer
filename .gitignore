@@ -8,6 +8,8 @@
 *.kicad_pcb-bak
 *.kicad_sch-bak
 *-backups
+/KiCad/.history/
+/tools/__pycache__/
 *.kicad_prl
 *.sch-bak
 *~

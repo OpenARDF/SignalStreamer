@@ -7,13 +7,14 @@
 	(tags "LED")
 	(property "Reference" "REF**"
 		(at 1.27 -3.96 0)
-		(layer "F.SilkS")
+		(layer "B.SilkS")
 		(uuid "224c0f08-a007-4fc2-b7b5-fe9e8ad48640")
 		(effects
 			(font
 				(size 1 1)
 				(thickness 0.15)
 			)
+			(justify mirror)
 		)
 	)
 	(property "Value" "LED_D5.0mm"
@@ -51,7 +52,7 @@
 	)
 	(property "KiLib_Generator" "LED/THT"
 		(at 0 0 0)
-		(layer "F.SilkS")
+		(layer "B.SilkS")
 		(hide yes)
 		(uuid "8a333fa8-8caa-4ab9-afdf-ca453355c32f")
 		(effects
@@ -59,6 +60,7 @@
 				(size 1 1)
 				(thickness 0.15)
 			)
+			(justify mirror)
 		)
 	)
 	(attr through_hole)
@@ -70,7 +72,7 @@
 			(width 0.18)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "B.SilkS")
 		(uuid "b0d6cbbd-6271-4c3f-a412-737165b5a24b")
 	)
 	(fp_rect

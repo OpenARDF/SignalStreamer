@@ -2570,7 +2570,7 @@
 		)
 		(uuid "f3752b8d-7abf-4784-92e7-ba6dd35f3d4c")
 	)
-	(text "Matching net names connect each alternative to its 100-series site above."
+	(text "Each C, R and D pairs with the 100-series site above. Both builds use the same through-hole RV101, L101, T101 and J105."
 		(exclude_from_sim no)
 		(at 19.05 182.88 0)
 		(effects
@@ -2911,16 +2911,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 261.62) (xy 160.02 261.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fa74a59-064d-56fb-8658-aabd7167c004")
-	)
-	(wire
-		(pts
 			(xy 116.84 81.28) (xy 116.84 87.63)
 		)
 		(stroke
@@ -3221,16 +3211,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 269.24) (xy 160.02 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41a3524a-91f1-5281-9dcc-5544e34ce6e2")
-	)
-	(wire
-		(pts
 			(xy 71.12 124.46) (xy 71.12 128.27)
 		)
 		(stroke
@@ -3238,16 +3218,6 @@
 			(type default)
 		)
 		(uuid "4202180c-a8b2-44d7-81b1-d8690ee74e84")
-	)
-	(wire
-		(pts
-			(xy 184.15 265.43) (xy 200.66 265.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4359f2e4-a52d-509c-b0d6-9866732af7ba")
 	)
 	(wire
 		(pts
@@ -4319,16 +4289,6 @@
 		)
 		(uuid "03b08dbf-222c-57b9-a9f3-adffd4f8781d")
 	)
-	(label "RECTIFIED"
-		(at 160.02 261.62 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "04bf2e54-5924-5968-bc60-8d4e263af75d")
-	)
 	(label "LED_A3"
 		(at 339.09 250.19 180)
 		(effects
@@ -4478,16 +4438,6 @@
 			(justify right bottom)
 		)
 		(uuid "3388b351-f16b-59c4-b4c2-55ae7b3cdcdf")
-	)
-	(label "DET_RETURN"
-		(at 160.02 269.24 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "34359254-986f-5fe6-90af-3849cf374fba")
 	)
 	(label "STEP_4"
 		(at 236.22 92.71 0)
@@ -4929,16 +4879,6 @@
 		)
 		(uuid "d23b25ea-72c8-582b-a098-3deca357b183")
 	)
-	(label "LED_DRIVE"
-		(at 200.66 265.43 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "d298e982-34f7-5a0d-87e2-0bb5a3fa2b1f")
-	)
 	(label "LED_A1"
 		(at 163.83 189.23 0)
 		(effects
@@ -5040,7 +4980,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
+		(property "Footprint" "SignalStreamer:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical_BackSilk"
 			(at 38.1 263.03 0)
 			(hide yes)
 			(show_name no)
@@ -5179,7 +5119,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk"
 			(at 109.22 202.07 0)
 			(hide yes)
 			(show_name no)
@@ -5457,7 +5397,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp"
+		(property "Footprint" "SignalStreamer:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp_BackSilk"
 			(at 38.1 247.79 0)
 			(hide yes)
 			(show_name no)
@@ -6742,7 +6682,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36b26efe-1d92-402b-b83d-60eb5488927a")
@@ -6907,7 +6847,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp"
+		(property "Footprint" "SignalStreamer:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp_BackSilk"
 			(at 322.58 217.31 0)
 			(hide yes)
 			(show_name no)
@@ -7046,7 +6986,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
+		(property "Footprint" "SignalStreamer:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical_BackSilk"
 			(at 180.34 247.79 0)
 			(hide yes)
 			(show_name no)
@@ -7442,7 +7382,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "4255dd09-782c-4716-83b5-1968f6035e78")
 		(property "Reference" "L101"
@@ -7746,7 +7686,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp"
+		(property "Footprint" "SignalStreamer:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp_BackSilk"
 			(at 251.46 232.55 0)
 			(hide yes)
 			(show_name no)
@@ -8185,7 +8125,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk"
 			(at 109.22 186.83 0)
 			(hide yes)
 			(show_name no)
@@ -8324,7 +8264,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp"
+		(property "Footprint" "SignalStreamer:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp_BackSilk"
 			(at 109.22 217.31 0)
 			(hide yes)
 			(show_name no)
@@ -8859,7 +8799,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "67d42155-66d1-41b6-b5eb-e4819de3d006")
 		(property "Reference" "J105"
@@ -9257,7 +9197,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk"
 			(at 251.46 202.07 0)
 			(hide yes)
 			(show_name no)
@@ -9507,148 +9447,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SignalStreamer:Sensitivity_Trimmer")
-		(at 180.34 265.43 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "70eeb4d7-83eb-5c8a-838a-bef0ab4b259b")
-		(property "Reference" "RV201"
-			(at 172.72 263.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2k"
-			(at 172.72 266.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
-			(at 180.34 265.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/3296.pdf"
-			(at 180.34 265.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "TRIMMER 2K OHM 0.5W PC PIN TOP"
-			(at 180.34 265.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key Part No." "118-PV36W202C01B00-ND"
-			(at 180.34 265.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 2.9972 2.9972)
-				)
-			)
-		)
-		(property "Manufacturer" "Bourns Inc."
-			(at 180.34 265.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer PN" "PV36W202C01B00"
-			(at 180.34 265.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" "https://www.digikey.com/en/products/detail/bourns-inc/PV36W202C01B00/666507"
-			(at 180.34 265.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Assembly" "Hand installation"
-			(at 180.34 265.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2bf0bee7-c03d-55f5-9e49-2e8c446a5c52")
-		)
-		(pin "3"
-			(uuid "0941c2dc-bb93-53ec-8ec7-4d188cfadc9e")
-		)
-		(pin "1"
-			(uuid "664cf7fa-8be1-5c95-b58d-11811376ad0c")
-		)
-		(instances
-			(project "SignalStreamer"
-				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39"
-					(reference "RV201")
-					(unit 1)
-					(variant
-						(name "SMD-PCBA")
-						(dnp yes)
-						(exclude_from_sim yes)
-					)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SignalStreamer:Detector_Diode")
 		(at 180.34 219.71 0)
 		(unit 1)
@@ -9679,7 +9477,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp"
+		(property "Footprint" "SignalStreamer:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp_BackSilk"
 			(at 180.34 217.31 0)
 			(hide yes)
 			(show_name no)
@@ -10760,7 +10558,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
+		(property "Footprint" "SignalStreamer:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical_BackSilk"
 			(at 322.58 247.79 0)
 			(hide yes)
 			(show_name no)
@@ -11183,7 +10981,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk"
 			(at 38.1 217.31 0)
 			(hide yes)
 			(show_name no)
@@ -11322,7 +11120,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk"
 			(at 180.34 202.07 0)
 			(hide yes)
 			(show_name no)
@@ -11461,7 +11259,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk"
 			(at 322.58 202.07 0)
 			(hide yes)
 			(show_name no)
@@ -12202,7 +12000,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk"
 			(at 322.58 186.83 0)
 			(hide yes)
 			(show_name no)
@@ -12341,7 +12139,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp"
+		(property "Footprint" "SignalStreamer:D_DO-35_SOD27_P2.54mm_Vertical_CathodeUp_BackSilk"
 			(at 109.22 232.55 0)
 			(hide yes)
 			(show_name no)
@@ -12503,7 +12301,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk"
 			(at 38.1 186.83 0)
 			(hide yes)
 			(show_name no)
@@ -13508,7 +13306,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
+		(property "Footprint" "SignalStreamer:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical_BackSilk"
 			(at 251.46 247.79 0)
 			(hide yes)
 			(show_name no)
@@ -13647,7 +13445,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
+		(property "Footprint" "SignalStreamer:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical_BackSilk"
 			(at 109.22 263.03 0)
 			(hide yes)
 			(show_name no)
@@ -13763,7 +13561,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "f59743c6-d808-40cb-a4e4-825d36c566ff")
 		(property "Reference" "RV101"
@@ -13788,7 +13586,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SignalStreamer:Trimmer_3224W"
+		(property "Footprint" "SignalStreamer:Potentiometer_Bourns_3296W_Vertical_BackSilk"
 			(at 130.81 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13799,7 +13597,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/3224.pdf"
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/pv36.pdf"
 			(at 130.81 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13810,7 +13608,7 @@
 				)
 			)
 		)
-		(property "Description" "2 kΩ 12-turn top-adjust SMD trimmer, 0.25 W"
+		(property "Description" "TRIMMER 2K OHM 0.5W PC PIN TOP"
 			(at 130.81 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13821,7 +13619,7 @@
 				)
 			)
 		)
-		(property "Digi-Key Part No." ""
+		(property "Digi-Key Part No." "118-PV36W202C01B00-ND"
 			(at 130.81 91.44 90)
 			(hide yes)
 			(show_name no)
@@ -13843,7 +13641,7 @@
 				)
 			)
 		)
-		(property "Manufacturer PN" "3224W-1-202E"
+		(property "Manufacturer PN" "PV36W202C01B00"
 			(at 130.81 91.44 90)
 			(hide yes)
 			(show_name no)
@@ -13854,7 +13652,7 @@
 				)
 			)
 		)
-		(property "Link" "https://www.bourns.com/docs/Product-Datasheets/3224.pdf"
+		(property "Link" "https://www.digikey.com/en/products/detail/bourns-inc/PV36W202C01B00/666507"
 			(at 130.81 91.44 90)
 			(hide yes)
 			(show_name no)
@@ -13865,7 +13663,7 @@
 				)
 			)
 		)
-		(property "Assembly" "Machine placement"
+		(property "Assembly" "Hand installation"
 			(at 130.81 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13890,11 +13688,6 @@
 				(path "/bb5a72dd-4ae0-443a-a555-e26e42998b39"
 					(reference "RV101")
 					(unit 1)
-					(variant
-						(name "THT-Kit")
-						(dnp yes)
-						(exclude_from_sim yes)
-					)
 				)
 			)
 		)
@@ -13930,7 +13723,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk"
 			(at 38.1 202.07 0)
 			(hide yes)
 			(show_name no)
@@ -14069,7 +13862,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk"
 			(at 180.34 186.83 0)
 			(hide yes)
 			(show_name no)
@@ -14208,7 +14001,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "SignalStreamer:C_Rect_L4.0mm_W2.5mm_P2.50mm_BackSilk"
 			(at 251.46 186.83 0)
 			(hide yes)
 			(show_name no)

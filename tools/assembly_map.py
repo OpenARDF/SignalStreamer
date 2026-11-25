@@ -13,10 +13,14 @@ def coordinates(element):
     return float(element.get("x")), -float(element.get("y"))
 
 
-def read_pads(ipc):
+def read_ipc(ipc):
     doc = ET.parse(ipc)
     for element in doc.iter():
         element.tag = element.tag.rsplit("}", 1)[-1]
+    return doc
+
+
+def read_pads(doc):
     outline = [coordinates(p) for p in doc.find(".//Profile/Polygon")]
     pads = defaultdict(list)
     for pad in doc.findall(".//LayerFeature[@layerRef='F.Cu']/Set/Pad"):
@@ -26,8 +30,8 @@ def read_pads(ipc):
     return outline, pads
 
 
-def locator(ipc, variant, fitted, svg_path, pdf_path):
-    outline, pads = read_pads(ipc)
+def locator(doc, variant, fitted, svg_path, pdf_path):
+    outline, pads = read_pads(doc)
     sections = [
         ("Capacitors", sorted(r for r in fitted if re.fullmatch(r"C\d+", r))),
         ("Diodes and indicators", sorted(r for r in fitted if re.fullmatch(r"D\d+", r))),
@@ -44,7 +48,9 @@ def locator(ipc, variant, fitted, svg_path, pdf_path):
         svg.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="{r}" fill="{fill}" stroke="{stroke}"/>')
 
     text(33, 44, f"SignalStreamer 1.2  /  {variant}", 34, "bold")
-    text(34, 76, "Component side up. The BNC faces right. Find each group on the same board outline.", 20)
+    legend = ("L101, T101 and J105 are marked on the front. Other kit markings are on the back." if variant == "THT-Kit"
+              else "SMD sites, L101, T101 and J105 are marked on the front.")
+    text(34, 76, f"Component side up. The BNC faces right. {legend}", 20)
     for panel, (title, refs) in enumerate(sections):
         left = 34 + (panel % 2) * 700
         top = 123 + (panel // 2) * 407

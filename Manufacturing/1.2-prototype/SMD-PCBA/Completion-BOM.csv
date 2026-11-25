@@ -11,3 +11,4 @@ H209,0.15,m,Magnet wire #22,,,,Kit hardware,22 AWG enamelled copper for the two-
 J105,1,piece,BNC,Amphenol RF,31-5431,SignalStreamer:BNC_31-5431,Hand installation,Right angle BNC jack,
 "LP1, LP2, LP3, LP4, LP5",5,piece,LED light pipe,VCC,LFB063CTP,,Kit hardware,Press fit into machined cover; one per LED,
 N201,1,case,PolyCase Box & Screws,PolyCase,SL-42PMBR,,Kit hardware,"SL-42PMBR cover, base and closure screws, machined to the SignalStreamer 1.2 drawing",https://www.polycase.com/sl-42p#SL-42PMBR
+RV101,1,piece,2k,Bourns Inc.,PV36W202C01B00,SignalStreamer:Potentiometer_Bourns_3296W_Vertical_BackSilk,Hand installation,TRIMMER 2K OHM 0.5W PC PIN TOP,https://www.digikey.com/en/products/detail/bourns-inc/PV36W202C01B00/666507

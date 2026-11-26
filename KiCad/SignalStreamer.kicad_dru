@@ -1,4 +1,8 @@
 (version 1)
+# Keep the fabrication minimum if Board Setup routing defaults are reset.
+(rule "Minimum copper trace width"
+  (constraint track_width (min 0.5mm)))
+
 # Each pair shares its optical axis. The SMD-PCBA and THT-Kit population
 # settings select one emitter. All copper, mask, and hole checks still apply.
 (rule "Mutually exclusive LED bodies"

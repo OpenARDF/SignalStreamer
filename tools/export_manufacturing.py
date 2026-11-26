@@ -19,8 +19,7 @@ from assembly_map import locator, read_ipc
 
 ROOT = Path(__file__).resolve().parents[1]
 PROJECT = ROOT / "KiCad" / "SignalStreamer"
-BOARD = PROJECT.with_suffix(".kicad_pcb")
-SCHEMATIC = PROJECT.with_suffix(".kicad_sch")
+BARE_LAYERS = "F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts"
 VARIANTS = ("SMD-PCBA", "THT-Kit")
 BOM_FIELDS = "Reference,Value,Manufacturer,Manufacturer PN,Footprint,Assembly,Description,Qty per board,Unit,Link"
 BOM_LABELS = "Ref,Value,Manufacturer,MPN,Footprint,Assembly,Description,Amount,Unit,Source"
@@ -120,16 +119,24 @@ def write_order(path, rows):
             writer.writerow((", ".join(row["Ref"] for row in group), quantity, unit, *fields))
 
 
-def export(cli, output, work):
+def plot_bare_board(cli, board, destination, variant=None):
+    selection = ["--variant", variant] if variant else []
+    subprocess.run([cli, "pcb", "export", "gerbers", "--check-zones", "--layers", BARE_LAYERS,
+                    "--no-protel-ext", *selection, "-o", destination, board], check=True)
+
+
+def export(cli, output, work, project=PROJECT):
+    board = project.with_suffix(".kicad_pcb")
+    schematic = project.with_suffix(".kicad_sch")
+
     def run(*args):
         subprocess.run([cli, *args], check=True)
 
-    run("sch", "erc", "--exit-code-violations", "-o", work / "erc.rpt", SCHEMATIC)
-    run("pcb", "drc", "--schematic-parity", "--exit-code-violations", "-o", work / "drc.rpt", BOARD)
+    run("sch", "erc", "--exit-code-violations", "-o", work / "erc.rpt", schematic)
+    run("pcb", "drc", "--schematic-parity", "--exit-code-violations", "-o", work / "drc.rpt", board)
     gerbers = work / "bare"
-    run("pcb", "export", "gerbers", "--layers", "F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts",
-        "--no-protel-ext", "-o", gerbers, BOARD)
-    run("pcb", "export", "drill", "--excellon-units", "mm", "--excellon-separate-th", "-o", gerbers, BOARD)
+    plot_bare_board(cli, board, gerbers)
+    run("pcb", "export", "drill", "--excellon-units", "mm", "--excellon-separate-th", "-o", gerbers, board)
     if len(list(gerbers.glob("*.gbr"))) != 7 or len(list(gerbers.glob("*.drl"))) != 2:
         raise ValueError("Expected seven Gerber layers and separate plated and unplated drill files")
     with ZipFile(output / "SignalStreamer-bare-board.zip", "w", ZIP_DEFLATED) as archive:
@@ -137,7 +144,7 @@ def export(cli, output, work):
             archive.write(path, path.name)
 
     ipc = work / "board.xml"
-    run("pcb", "export", "ipc2581", "--units", "mm", "-o", ipc, BOARD)
+    run("pcb", "export", "ipc2581", "--units", "mm", "-o", ipc, board)
     doc = read_ipc(ipc)
     check_footprints(doc)
     populations = {}
@@ -146,7 +153,7 @@ def export(cli, output, work):
         folder.mkdir()
         native_bom = work / (variant + ".csv")
         run("sch", "export", "bom", "--variant", variant, "--exclude-dnp", "--fields", BOM_FIELDS,
-            "--labels", BOM_LABELS, "-o", native_bom, SCHEMATIC)
+            "--labels", BOM_LABELS, "-o", native_bom, schematic)
         rows = read_rows(native_bom)
         by_ref = {row["Ref"]: row for row in rows}
         populations[variant] = set(by_ref)
@@ -155,7 +162,7 @@ def export(cli, output, work):
         board_step = folder / (variant + ".step")
         board_step.touch()
         run("pcb", "export", "step", "--force", "--variant", variant, "--no-dnp", "--subst-models",
-            "-o", board_step, BOARD)
+            "-o", board_step, board)
         modeled = set(re.findall(r"NEXT_ASSEMBLY_USAGE_OCCURRENCE\('\d+','([A-Z]+\d+)'", board_step.read_text()))
         expected = {r["Ref"] for r in rows if r["Footprint"]}
         if modeled != expected:
@@ -164,7 +171,7 @@ def export(cli, output, work):
         if variant == "SMD-PCBA":
             positions = folder / "Placement-mm.csv"
             run("pcb", "export", "pos", "--variant", variant, "--exclude-dnp", "--smd-only", "--format",
-                "csv", "--units", "mm", "-o", positions, BOARD)
+                "csv", "--units", "mm", "-o", positions, board)
             machine = [row for row in rows if row["Assembly"] == "Machine placement"]
             fitted = read_rows(positions)
             if ({row["Ref"] for row in fitted} != {row["Ref"] for row in machine}
@@ -175,7 +182,7 @@ def export(cli, output, work):
             write_order(folder / "Completion-BOM.csv", [row for row in rows if row not in machine])
             stencil = work / "stencil"
             run("pcb", "export", "gerbers", "--variant", variant, "--layers", "F.Paste",
-                "--no-protel-ext", "-o", stencil, BOARD)
+                "--no-protel-ext", "-o", stencil, board)
             paste = next(stencil.glob("*.gbr"))
             if paste.read_text().count("D03*") != 2 * len(SMD_TO_THT):
                 raise ValueError("Expected 54 front-side paste apertures for 27 placed parts")
